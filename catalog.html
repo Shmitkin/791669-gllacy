@@ -37,11 +37,51 @@
       <section class="catalog">
         <h1>Сливочное мороженое</h1>
         <!-- Здесь будет форма -->
-        <!-- <form action="" method="post"> -->
-          <!-- <label for="filter-type">Сортировка</label> -->
-          <!-- <input type="text" name="filter-type" id="filter-type"> -->
-          
-        <!-- s</form> -->
+        <form class="filter-form" method="get">
+          <p class="filter-form-item">
+            <label for="filter-form-type">Сортировка</label>
+            <input list="sort-by" name="filter-form-type" id="filter-form-type"> <!-- лучше селект или лист?-->
+            <datalist id="sort-by">
+              <option value="по популярности"></option>
+              <option value="сначала недорогие"></option>
+              <option value="сначала дорогие"></option>
+              <option value="по жирности"></option>
+            </datalist>
+          </p>
+          <p class="filter-form-item"> <!--помоему на лекции говорили что сделать 2 бегунка выбора из диапазона нельзя скорре всего то что ниже неправильно-->
+            <label for="filter-form-price">Цена</label>
+            <input type="range" min="0" max="800" step="100" name="filter-form-price">
+          </p>
+          <p class="filter-form-item">
+            <fieldset>
+              <legend>Жирность:</legend>
+              <input type="radio" name="filter-form-fatness" id="fatness-0" value="0%">
+              <label for="fatness-0">0%</label>
+              <input type="radio" name="filter-form-fatness" id="fatness-10" value="10%">
+              <label for="fatness-10">до 10%</label>
+              <input type="radio" name="filter-form-fatness" id="fatness-before30" value="30%">
+              <label for="fatness-before30">до 30%</label>
+              <input type="radio" name="filter-form-fatness" id="fatness-after30" value="30%">
+              <label for="fatness-after30">выше 30%</label>
+            </fieldset>
+          </p>
+          <p class="filter-form-item">
+            <fieldset>
+              <legend>Наполнители:</legend>
+              <input type="checkbox" name="chocolate" id="chocolate-filling" value="chocolate" checked>
+              <label for="chocolate-filling">шоколадные</label>
+              <input type="checkbox" name="sugar" id="sugar-filling" value="sugar" checked>
+              <label for="sugar-filling">сахарные присыпки</label>
+              <input type="checkbox" name="fruits" id="fruits-filling" value="fruits">
+              <label for="fruits-filling">фрукты</label>
+              <input type="checkbox" name="syrop" id="syrop-filling" value="syrop">
+              <label for="syrop-filling">сиропы</label>
+              <input type="checkbox" name="jam" id="jam-filling" value="jam">
+              <label for="jam-filling">джемы</label>
+            </fieldset>
+          </p>
+          <button type="submit" class="filter-form-button">Применить</button>
+        </form>
         <ul class="catalog-list">
           <li class="catalog-list-item">
             <img src="img/content/icecream-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
