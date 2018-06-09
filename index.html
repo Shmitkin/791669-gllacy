@@ -33,17 +33,17 @@
   				<li class="novelty-list-item">
   			 		<img src="img/content/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
   					<p>Крем-брюле и пломбир с малиновым джемом</p>
-  					<a class="button" href="#">Давайте оба!</a>
+  					<button type="button" class="button">Давайте оба!</button>
   				</li>
  	 			<li class="novelty-list-item">
  	 				<img src="img/content/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
  	 			 	<p>Шоколадный пломбир и лимонный сорбет</p>
- 	 			 	<a class="button" href="#">Давайте оба!</a>
+ 	 			 	<button type="button" class="button">Давайте оба!</button>
  	 		    </li>
 	  			<li class="novelty-list-item">
 	  				<img src="img/content/slider-3.png" width="1045" height="881"  alt="Пломбир с помадкой и клубничный щербет">
 	  				<p>Пломбир с помадкой и клубничный щербет</p>
-	  				<a class="button" href="#">Давайте оба!</a>
+	  				<button type="button" class="button">Давайте оба!</button>
 	  			</li>
 	  		</ul>
 	  	</section>
@@ -53,13 +53,13 @@
 	  			<h3>Малинка даром!</h3>
 	  			<p>При покупке 2 кг любого фруктового мороженого, 
 	  			добавим в ваш заказ банку малинового варенья бесплатно.</p>
-	  			<a class="button" href="#">Хочу варенье!</a>
+	  			<button type="button" class="button">Хочу варенье!</button>
 	  		</div>
 	  		<div class="promo-item">
 	  			<h3>Шоколадки даром!</h3>
 	  			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
 	  			шоколадной присыпки абсолютно бесплатно.</p>
-	  			<a class="button" href="#">Хочу шоколадки!</a>
+	  			<button type="button" class="button">Хочу шоколадки!</button>
 	  		</div>
 	  	</section>
 	  	<section class="hits">
@@ -116,10 +116,10 @@
 	  	<section class="subscribe">
 	  		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
 	  		что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-	  		<!-- Здесь будет форма подписки -->
-	  		<form action="" method="post">
-	  			<input type="email" id="e-mail" name="e-mail" placeholder="Электронная почта">
-	  			<button class="button">Отправить</button>
+	  		<form class="subscribe-form" method="post" action="">
+	  			<label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
+	  			<input type="email" id="subscribe-form-email" name="email" placeholder="Электронная почта">
+	  			<button type="submit" class="button">Отправить</button>
 	  		</form>
 	  	</section>
 	  	<section class="map">
@@ -135,7 +135,7 @@
 	  				<b>8 812 450-25-25</b><br>
 	  				(с 10 до 20 ежедневно)	  				
 	  			</p>
-	  			<a class="button" href="#">Форма обратной связи</a>
+	  			<button type="button" class="button">Форма обратной связи</button>
 	  		</div>
 	  	</section>
   </main>
@@ -167,6 +167,51 @@
   		<p> Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
   	</div>
   </footer>
+  <div class="feedback-popup">
+  	<form class="feedback-form" method="post">
+  		<p>Мы обязательно вам ответим!</p>
+  		<p class="feedback-form-item">
+  			<label for="feedback-form-name" class="visually-hidden" >Ваше имя</label>
+  			<input type="text" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
+  		</p>
+  		<p class="feedback-form-item">
+  			<label for="feedback-form-email" class="visually-hidden">Ваша почта для ответа</label>
+  			<input type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
+  		</p>
+  		<p class="feedback-form-item">
+  			<textarea placeholder="Напишите что-нибудь..." rows="4" cols="50"> 		
+  				<!-- Почему-то placeholder у textarea не работает -->
+  			</textarea>
+  		</p>
+  		<button type="submit" class="button">Отправить</button>
+  	</form>
+  	<button class="button-popup-close" type="button">Закрыть</button>
+  </div>
+  <div class="user-login-popup">
+  	<form class="user-login-form" method="post">
+  		<p class="user-login-form-item">
+  			<label class="visually-hidden" for="user-login-form-email">Электронная почта для входа</label>
+  			<input type="email" name="email" id="user-login-form-email" placeholder="Электронная почта" required>
+  		</p>
+  		<p class="user-login-form-item">
+  			<label class="visually-hidden" for="user-login-form-password">Пароль</label>
+  			<input type="password" name="password" placeholder="Пароль" id="user-login-form-password" required>
+  		</p>
+  		<button type="submit" class="button">Войти</button>  
+  		<ul class="user-login-form-links">
+  			<li><a href="#">Забыли пароль?</a></li>
+  			<li><a href="#">Новая регистрация</a></li>  		
+  		</ul>		
+  	</form>
+  </div>
+  <div class="user-search-popup">
+  	<form class="user-search-form" method="post">
+  		<label for="user-search">Что ищем?</label>
+  		<input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
+  	</form>
+  	
+  </div>
+
 
      
 
