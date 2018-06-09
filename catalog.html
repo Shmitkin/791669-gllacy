@@ -50,10 +50,10 @@
           </p>
           <p class="filter-form-item"> <!--помоему на лекции говорили что сделать 2 бегунка выбора из диапазона нельзя скорре всего то что ниже неправильно-->
             <label for="filter-form-price">Цена</label>
-            <input type="range" min="0" max="800" step="100" name="filter-form-price">
+            <input type="range" min="0" max="800" step="100" name="filter-form-price" id="filter-form-price">
           </p>
-          <p class="filter-form-item">
-            <fieldset>
+         
+            <fieldset class="filter-form-fatness">
               <legend>Жирность:</legend>
               <input type="radio" name="filter-form-fatness" id="fatness-0" value="0%">
               <label for="fatness-0">0%</label>
@@ -64,9 +64,9 @@
               <input type="radio" name="filter-form-fatness" id="fatness-after30" value="30%">
               <label for="fatness-after30">выше 30%</label>
             </fieldset>
-          </p>
-          <p class="filter-form-item">
-            <fieldset>
+       
+          
+            <fieldset class="filter-form-filling">
               <legend>Наполнители:</legend>
               <input type="checkbox" name="chocolate" id="chocolate-filling" value="chocolate" checked>
               <label for="chocolate-filling">шоколадные</label>
@@ -79,7 +79,7 @@
               <input type="checkbox" name="jam" id="jam-filling" value="jam">
               <label for="jam-filling">джемы</label>
             </fieldset>
-          </p>
+          
           <button type="submit" class="filter-form-button">Применить</button>
         </form>
         <ul class="catalog-list">
