@@ -11,13 +11,42 @@
   				<img src="img/content/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
   			</a>
   			<ul class="site-menu">
-  				<li><a href="#">Каталог</a></li>
+  				<li><a href="#">Каталог</a>
+            <ul class="site-submenu">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
   				<li><a href="#">Доставка и оплата</a></li>
   				<li><a href="#">О Компании</a></li>
   			</ul>
-  			<ul class="user-menu">
-  				<li class="user-search"><a href="#">Поиск</a></li>
-  				<li class="user-login"><a href="#">Вход</a></li>
+        <ul class="user-menu">
+          <li class="user-search"><a href="#">Поиск</a>
+            <form class="user-search-form" method="post">
+            <label for="user-search" class="visually-hidden">Что ищем?</label>
+            <input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li class="user-login"><a href="#">Вход</a>
+            <form class="user-login-form" method="post">
+              <p class="user-login-form-item">
+                <label class="visually-hidden" for="user-login-form-email">Электронная почта для входа</label>
+                <input type="email" name="email" id="user-login-form-email" placeholder="Электронная почта" required>
+              </p>
+              <p class="user-login-form-item">
+                <label class="visually-hidden" for="user-login-form-password">Пароль</label>
+                <input type="password" name="password" placeholder="Пароль" id="user-login-form-password" required>
+              </p>
+              <button type="submit" class="button">Войти</button>  
+              <ul class="user-login-form-links">
+                <li><a href="#">Забыли пароль?</a></li>
+                <li><a href="#">Новая регистрация</a></li>      
+              </ul>   
+            </form>
+          </li>
   				<li class="user-basket"><a href="#">2 товара</a></li>
   			</ul>
   		</nav>
@@ -40,15 +69,15 @@
         <form class="filter-form" method="get">
           <p class="filter-form-item">
             <label for="filter-form-type">Сортировка</label>
-            <input list="sort-by" name="filter-form-type" id="filter-form-type"> <!-- лучше селект или лист?-->
-            <datalist id="sort-by">
-              <option value="по популярности"></option>
-              <option value="сначала недорогие"></option>
-              <option value="сначала дорогие"></option>
-              <option value="по жирности"></option>
-            </datalist>
+            <select name="filter-form-type" id="filter-form-type">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="exspensive">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+            
           </p>
-          <p class="filter-form-item"> <!--помоему на лекции говорили что сделать 2 бегунка выбора из диапазона нельзя скорре всего то что ниже неправильно-->
+          <p class="filter-form-item"> 
             <label for="filter-form-price">Цена</label>
             <input type="range" min="0" max="800" step="100" name="filter-form-price" id="filter-form-price">
           </p>
@@ -59,9 +88,9 @@
               <label for="fatness-0">0%</label>
               <input type="radio" name="filter-form-fatness" id="fatness-10" value="10%">
               <label for="fatness-10">до 10%</label>
-              <input type="radio" name="filter-form-fatness" id="fatness-before30" value="30%">
+              <input type="radio" name="filter-form-fatness" id="fatness-before30" value="before30%">
               <label for="fatness-before30">до 30%</label>
-              <input type="radio" name="filter-form-fatness" id="fatness-after30" value="30%">
+              <input type="radio" name="filter-form-fatness" id="fatness-after30" value="after30%">
               <label for="fatness-after30">выше 30%</label>
             </fieldset>
        

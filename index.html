@@ -24,8 +24,29 @@
   				<li><a href="#">О Компании</a></li>
   			</ul>
   			<ul class="user-menu">
-  				<li class="user-search"><a href="#">Поиск</a></li>
-  				<li class="user-login"><a href="#">Вход</a></li>
+  				<li class="user-search"><a href="#">Поиск</a>
+  					<form class="user-search-form" method="post">
+  					<label for="user-search" class="visually-hidden">Что ищем?</label>
+  					<input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
+  					</form>
+  				</li>
+  				<li class="user-login"><a href="#">Вход</a>
+  					<form class="user-login-form" method="post">
+	  					<p class="user-login-form-item">
+	  						<label class="visually-hidden" for="user-login-form-email">Электронная почта для входа</label>
+	  						<input type="email" name="email" id="user-login-form-email" placeholder="Электронная почта" required>
+	  					</p>
+	  					<p class="user-login-form-item">
+	  						<label class="visually-hidden" for="user-login-form-password">Пароль</label>
+	  						<input type="password" name="password" placeholder="Пароль" id="user-login-form-password" required>
+	  					</p>
+	  					<button type="submit" class="button">Войти</button>  
+	  					<ul class="user-login-form-links">
+	  						<li><a href="#">Забыли пароль?</a></li>
+	  						<li><a href="#">Новая регистрация</a></li>  		
+	  					</ul>		
+  					</form>
+  				</li>
   				<li class="user-basket"><a href="#">Пусто</a></li>
   			</ul>
   		</nav>
@@ -41,17 +62,17 @@
   				<li class="novelty-list-item">
   			 		<img src="img/content/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
   					<p>Крем-брюле и пломбир с малиновым джемом</p>
-  					<button type="button" class="button">Давайте оба!</button>
+  					<a href="#">Давайте оба!</a>
   				</li>
  	 			<li class="novelty-list-item">
  	 				<img src="img/content/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
  	 			 	<p>Шоколадный пломбир и лимонный сорбет</p>
- 	 			 	<button type="button" class="button">Давайте оба!</button>
+ 	 			 	<a href="#">Давайте оба!</a>
  	 		    </li>
 	  			<li class="novelty-list-item">
 	  				<img src="img/content/slider-3.png" width="1045" height="881"  alt="Пломбир с помадкой и клубничный щербет">
 	  				<p>Пломбир с помадкой и клубничный щербет</p>
-	  				<button type="button" class="button">Давайте оба!</button>
+	  				<a href="#">Давайте оба!</a>
 	  			</li>
 	  		</ul>
 	  	</section>
@@ -61,13 +82,13 @@
 	  			<h3>Малинка даром!</h3>
 	  			<p>При покупке 2 кг любого фруктового мороженого, 
 	  			добавим в ваш заказ банку малинового варенья бесплатно.</p>
-	  			<button type="button" class="button">Хочу варенье!</button>
+	  			<a href="#">Хочу варенье!</a>
 	  		</div>
 	  		<div class="promo-item">
 	  			<h3>Шоколадки даром!</h3>
 	  			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
 	  			шоколадной присыпки абсолютно бесплатно.</p>
-	  			<button type="button" class="button">Хочу шоколадки!</button>
+	  			<a href="#">Хочу шоколадки!</a>
 	  		</div>
 	  	</section>
 	  	<section class="hits">
@@ -143,7 +164,7 @@
 	  				<b>8 812 450-25-25</b><br>
 	  				(с 10 до 20 ежедневно)	  				
 	  			</p>
-	  			<button type="button" class="button">Форма обратной связи</button>
+	  			<a href="#">Форма обратной связи</a>
 	  		</div>
 	  	</section>
   </main>
@@ -188,41 +209,13 @@
   		</p>
   		<p class="feedback-form-item">
   			<textarea placeholder="Напишите что-нибудь..." rows="4" cols="50"> 		
-  				<!-- Почему-то placeholder у textarea не работает -->
+  				
   			</textarea>
   		</p>
   		<button type="submit" class="button">Отправить</button>
   	</form>
   	<button class="button-popup-close" type="button">Закрыть</button>
   </div>
-  <div class="user-login-popup">
-  	<form class="user-login-form" method="post">
-  		<p class="user-login-form-item">
-  			<label class="visually-hidden" for="user-login-form-email">Электронная почта для входа</label>
-  			<input type="email" name="email" id="user-login-form-email" placeholder="Электронная почта" required>
-  		</p>
-  		<p class="user-login-form-item">
-  			<label class="visually-hidden" for="user-login-form-password">Пароль</label>
-  			<input type="password" name="password" placeholder="Пароль" id="user-login-form-password" required>
-  		</p>
-  		<button type="submit" class="button">Войти</button>  
-  		<ul class="user-login-form-links">
-  			<li><a href="#">Забыли пароль?</a></li>
-  			<li><a href="#">Новая регистрация</a></li>  		
-  		</ul>		
-  	</form>
-  </div>
-  <div class="user-search-popup">
-  	<form class="user-search-form" method="post">
-  		<label for="user-search">Что ищем?</label>
-  		<input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
-  	</form>
-  	
-  </div>
-
-
-     
-
   </body>
 </html>
 		
