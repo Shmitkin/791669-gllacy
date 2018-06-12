@@ -1,0 +1,272 @@
+/*Подключаем нестандартные шрифты*/
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto.woff2") format("woff2"),
+		 url("../fonts/Roboto.woff") format("woff");
+}
+
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium.woff2") format("woff2"),
+		 url("../fonts/RobotoMedium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/Roboto.woff2") format("woff2"),
+		 url("../fonts/Roboto.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 500;
+	font-style: normal;
+	src: url("../fonts/Roboto.woff2") format("woff2"),
+		 url("../fonts/Roboto.woff") format("woff");
+}
+
+/*Общие стили*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	background-color: #849d8f;
+}
+
+a {
+	color: #ffffff;
+	text-decoration-color: #abc2b5;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+input {
+	font:inherit;
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+	background-color: #ffffff;
+}
+
+.button {
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #f06341;
+}
+
+ul {
+	list-style: none;
+}
+
+/*Меню навигации по сайту*/
+
+.site-menu li {
+	font-weight: bold;
+	line-height: 18px;
+}
+
+/*Меню пользователя*/
+.user-menu li {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal; 
+}
+
+.user-menu input {
+	font-size: 14px;
+	line-height: 24px;
+	background-color: #ffffff;
+}
+
+.user-menu form {
+	background-color: #f8f7f4;
+}
+
+.user-menu a {
+	text-decoration: none;
+}
+
+.user-login-form a {
+	color: #323232;
+	text-decoration: underline;
+}
+
+/*Контакты*/
+.main-header-contacts span {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+/*Слайдеры*/
+.novelty-list-item p {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+/*Блок промо*/
+
+.promo div:first-of-type {
+	background-color: #640122;
+	background-image: url(../img/bg/raspberry-bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.promo div:last-of-type {
+	background-color: #542c17;
+	background-image: url(../img/bg/chocolate-bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.promo-item h3 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: bold;
+}
+
+.promo-item p {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+/*Блок хитов продаж*/
+.hit-price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+.hit-price span {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+.hit-name {
+	font-weight: medium;
+	text-decoration: underline;
+	text-decoration-color: #abc2b5;
+}
+
+/*Блок преимущества*/
+.features h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.features h3,
+.features p {
+	color: #323232;
+}
+
+.features {
+	background-color: #eee4cc;
+	background-image: url(../img/bg/pattern.jpg);
+}
+
+/*Блок блога*/
+
+.blog {
+	background-color: #ffffff;
+	background-image: url(../img/bg/strawberry-bg.jpg);
+	background-repeat: no-repeat;
+
+}
+
+.blog p {
+	color:#323232;
+}
+
+.blog a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	text-decoration-color: #353535; 
+	color: #323232;
+}
+
+/*Блок подписки*/
+.subscribe {
+	background-color: #f8f7f4;
+}
+
+.subscribe p {
+	color: #5a5a5a;	
+}
+
+
+
+/*Блок карты*/
+
+.map {
+	background-color: #ede6c9;
+}
+
+.map-info {
+	background-color: #ffffff;
+	color: #323232;
+}
+
+.map-info p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.map-info b {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+/*Футер*/
+
+.socials li {
+	background-color: #e6ebe9;
+}
+
+.socials a {
+	color: #000000;
+}
+
+.footer-menu li:first-child a {
+	font-weight: bold;
+}
+
+.copyright a,
+.copyright p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/*Форма обратной связи*/
+
+.feedback-popup {
+	background-color: #f8f7f4;
+}
+
+.feedback-form p:first-child {
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
