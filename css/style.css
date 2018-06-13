@@ -4,18 +4,25 @@
 	font-family: "Roboto";
 	font-weight: 400;
 	font-style: normal;
-	src: url("../fonts/Roboto.woff2") format("woff2"),
-		 url("../fonts/Roboto.woff") format("woff");
+	src: url("../fonts/roboto.woff2") format("woff2"),
+		 url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Roboto";
 	font-weight: 500;
 	font-style: normal;
-	src: url("../fonts/RobotoMedium.woff2") format("woff2"),
-		 url("../fonts/RobotoMedium.woff") format("woff");
+	src: url("../fonts/robotomedium.woff2") format("woff2"),
+		 url("../fonts/robotomedium.woff") format("woff");
 }
 
+@font-face {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../fonts/robotobold.woff2") format("woff2"),
+		 url("../fonts/robotobold.woff") format("woff");
+}
 /*Общие стили*/
 body {
 	margin: 0;
@@ -52,6 +59,7 @@ a:active {
 }
 
 .button {
+	font:inherit;
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
@@ -80,24 +88,28 @@ a:active {
 
 /*Меню навигации по сайту*/
 
-.site-menu > li > a {
+.main-menu-logo {
+	border-bottom: none;
+}
+
+.site-menu-link {
 	font-weight: 700;
 	line-height: 18px;
 	
 }
 
-.site-menu > li > a:hover {
+.site-menu-link:hover {
 	background-color: #f7f6f3;
 	color: #333333;
 	border-bottom: none;
 }
 
-.site-menu > li > a:active {
+.site-menu-link:active {
 	background-color: #ededed;
 	/* и когда сделам дисплей подкрутим бокс шедоу*/
 }
 
-.site-menu > li > a:focus {
+.site-menu-link:focus {
 	background-color: #d07058;
 	color: #333333;
 	border-bottom: none;
@@ -125,7 +137,7 @@ a:active {
 	background-color: #f6b5a5;
 }
 /*здесь нужен visited или focus?*/
-.site-submenu a:visited {    
+.site-submenu a:focus {    
 	background-color: #d07058;
 }
 
@@ -137,6 +149,7 @@ a:active {
 }
 
 .user-menu input {
+	font:inherit;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
@@ -152,20 +165,31 @@ a:active {
 	border-bottom: none;
 }
 
-.user-menu > li > a {
+.user-search > a,
+.user-login > a,
+.user-basket > a {
 	background-color: #a1b4a9;
+	text-decoration: none;
+	border-bottom: none;
 }
 
-.user-menu > li > a:hover {
+.user-search > a:hover,
+.user-login > a:hover,
+.user-basket > a:hover{
 	background-color: #f8f7f4;
 	color: #000000;
-
 }
 
 .user-login-form a {
 	color: #323232;
 	text-decoration: none;
 	border-bottom: solid 1px #323232;
+}
+
+.user-login-form a:hover,
+.user-login-form a:active {
+	color: #e84d37;
+	border-bottom: solid 1px #f9cdc4;
 }
 
 /*Контакты*/
@@ -404,6 +428,7 @@ a:active {
 /*на инпут тайп рэнж фон не работает, предполагаю что заработает в будущем*/
 .filter-form input[type="range"], 
 .filter-form fieldset {
+	font:inherit;
 	background-color: #a9bab0;
 }
 
@@ -420,6 +445,7 @@ a:active {
 }
 
 .filter-form-button {
+	font:inherit;
 	line-height: 18px;
 	font-weight: 500;
 	background-color: #9cb0a4;
