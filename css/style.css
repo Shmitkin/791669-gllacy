@@ -66,6 +66,7 @@ a:active {
 .site-menu,
 .site-submenu,
 .user-menu,
+.user-login-form-links,
 .novelty-list,
 .hits-list,
 .features-list,
@@ -245,6 +246,10 @@ a:active {
 	border-bottom: solid 1px #abc2b5; 
 }
 
+.catalog-list-item:hover {
+	background-color: #9bafa3;
+}
+
 /*Блок преимущества*/
 
 .features h3 {
@@ -324,14 +329,23 @@ a:active {
 
 /*Футер*/
 
-.socials li {
-	background-color: #e6ebe9;
-}
-
 .socials a {
 	color: #000000;
 	border-bottom: none;
+	background-color: #e6ebe9;
+	border: solid 3px #c2cec7;
 }
+
+.socials a:hover {
+	background-color: #ffffff;
+	border-color: #dae2de;
+}
+
+.socials a:active {
+	background-color: #e9e9e9;
+	border-color: #dae2de;
+}
+
 
 .footer-menu li:first-child a {
 	font-weight: 700;
@@ -374,6 +388,15 @@ a:active {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
+}
+
+.catalog-navigation-list a{
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.catalog-navigation-list li:last-child a {
+	border-bottom: none;
 }
 /*Форма фильтра*/
 
