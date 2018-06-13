@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -76,13 +77,11 @@
               <option value="exspensive">сначала дорогие</option>
               <option value="fatness">по жирности</option>
             </select>
-            
           </p>
           <p class="filter-form-item"> 
             <label for="filter-form-price">Цена</label>
             <input type="range" min="0" max="800" step="100" name="filter-form-price" id="filter-form-price">
           </p>
-         
             <fieldset class="filter-form-fatness">
               <legend>Жирность:</legend>
               <input type="radio" name="filter-form-fatness" id="fatness-0" value="0%">
@@ -93,9 +92,7 @@
               <label for="fatness-before30">до 30%</label>
               <input type="radio" name="filter-form-fatness" id="fatness-after30" value="after30%">
               <label for="fatness-after30">выше 30%</label>
-            </fieldset>
-       
-          
+            </fieldset>          
             <fieldset class="filter-form-filling">
               <legend>Наполнители:</legend>
               <input type="checkbox" name="chocolate" id="chocolate-filling" value="chocolate" checked>
@@ -109,7 +106,6 @@
               <input type="checkbox" name="jam" id="jam-filling" value="jam">
               <label for="jam-filling">джемы</label>
             </fieldset>
-          
           <button type="submit" class="filter-form-button">Применить</button>
         </form>
         <ul class="catalog-list">
@@ -182,7 +178,6 @@
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
           <li><a href="#">&#62;</a></li>
-          
         </ul>
       </section>
     </main>

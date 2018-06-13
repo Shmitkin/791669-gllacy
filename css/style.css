@@ -1,15 +1,4 @@
 /*Подключаем нестандартные шрифты*/
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/Roboto.woff2") format("woff2"),
-		 url("../fonts/Roboto.woff") format("woff");
-}
-
-@font-face {
-	font-family: "RobotoMedium";
-	src: url("../fonts/RobotoMedium.woff2") format("woff2"),
-		 url("../fonts/RobotoMedium.woff") format("woff");
-}
 
 @font-face {
 	font-family: "Roboto";
@@ -23,8 +12,8 @@
 	font-family: "Roboto";
 	font-weight: 500;
 	font-style: normal;
-	src: url("../fonts/Roboto.woff2") format("woff2"),
-		 url("../fonts/Roboto.woff") format("woff");
+	src: url("../fonts/RobotoMedium.woff2") format("woff2"),
+		 url("../fonts/RobotoMedium.woff") format("woff");
 }
 
 /*Общие стили*/
@@ -33,6 +22,7 @@ body {
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
+	font-weight: 400;
 	line-height: 22px;
 	color: #ffffff;
 	background-color: #849d8f;
@@ -40,50 +30,115 @@ body {
 
 a {
 	color: #ffffff;
-	text-decoration-color: #abc2b5;
+	border-bottom: solid 1px #abc2b5;
+	text-decoration: none;	 
+}
+
+a:hover,
+a:active {
+	color: #ffbc9e;
+	border-bottom: solid 1px #a7a294;
 }
 
 .visually-hidden {
-	display: none;
-}
-
-input {
-	font:inherit;
-	font-size: 16px;
-	line-height: 24px;
-	color: #999999;
-	background-color: #ffffff;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 .button {
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
+	font-weight: 700;
 	color: #ffffff;
 	background-color: #f06341;
+	border-bottom: none;
 }
 
-ul {
+/*Отключаем кружочки у списков*/
+
+.site-menu,
+.site-submenu,
+.user-menu,
+.novelty-list,
+.hits-list,
+.features-list,
+.socials,
+.footer-menu,
+.catalog-list,
+.pagination {
 	list-style: none;
 }
 
+
 /*Меню навигации по сайту*/
 
-.site-menu li {
-	font-weight: bold;
+.site-menu > li > a {
+	font-weight: 700;
 	line-height: 18px;
+	
+}
+
+.site-menu > li > a:hover {
+	background-color: #f7f6f3;
+	color: #333333;
+	border-bottom: none;
+}
+
+.site-menu > li > a:active {
+	background-color: #ededed;
+	/* и когда сделам дисплей подкрутим бокс шедоу*/
+}
+
+.site-menu > li > a:focus {
+	background-color: #d07058;
+	color: #333333;
+	border-bottom: none;
+}
+
+.site-submenu a {
+	color: #323232;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	border-bottom: none;
+	background-color: #f8f7f4;
+}
+
+.site-submenu li:first-child a {
+	font-weight: 700;
+	border-bottom: solid 1px #d1d0ce;
+}
+
+.site-submenu a:hover {
+	background-color: #fbded7;
+}
+
+.site-submenu a:active {
+	background-color: #f6b5a5;
+}
+/*здесь нужен visited или focus?*/
+.site-submenu a:visited {    
+	background-color: #d07058;
 }
 
 /*Меню пользователя*/
-.user-menu li {
+.user-menu a {
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: normal; 
+	font-weight: 400; 
 }
 
 .user-menu input {
 	font-size: 14px;
 	line-height: 24px;
+	font-weight: 400;
 	background-color: #ffffff;
 }
 
@@ -93,35 +148,62 @@ ul {
 
 .user-menu a {
 	text-decoration: none;
+	border-bottom: none;
+}
+
+.user-menu > li > a {
+	background-color: #a1b4a9;
+}
+
+.user-menu > li > a:hover {
+	background-color: #f8f7f4;
+	color: #000000;
+
 }
 
 .user-login-form a {
 	color: #323232;
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: solid 1px #323232;
 }
 
 /*Контакты*/
+.main-header-contacts {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
 .main-header-contacts span {
 	font-size: 22px;
 	line-height: 24px;
+	font-weight: 700;
 }
 
+
 /*Слайдеры*/
+
 .novelty-list-item p {
 	font-size: 60px;
 	line-height: 60px;
-	font-weight: bold;
+	font-weight: 700;
+}
+
+.novelty .button {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
 }
 
 /*Блок промо*/
 
-.promo div:first-of-type {
+.promo .promo-item:first-of-type {
 	background-color: #640122;
 	background-image: url(../img/bg/raspberry-bg.jpg);
 	background-repeat: no-repeat;
 }
 
-.promo div:last-of-type {
+.promo .promo-item:last-of-type {
 	background-color: #542c17;
 	background-image: url(../img/bg/chocolate-bg.jpg);
 	background-repeat: no-repeat;
@@ -130,46 +212,50 @@ ul {
 .promo-item h3 {
 	font-size: 35px;
 	line-height: 41px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .promo-item p {
 	font-size: 18px;
 	line-height: 22px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-/*Блок хитов продаж*/
-.hit-price {
+/*Блок хитов продаж и каталога*/
+
+.hit-price,
+.item-price {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-.hit-price span {
+.hit-price span,
+.item-price span {
 	font-size: 30px;
 	line-height: 45px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-.hit-name {
-	font-weight: medium;
-	text-decoration: underline;
-	text-decoration-color: #abc2b5;
+/*Вот сейчас подчеркивается абзац на всю ширину, изменится ли подчеркивание когда я задам display: inline-block или block?
+или нужно использовать другой метод?*/
+.hit-name,
+.item-name {   
+	font-weight: 500;
+	border-bottom: solid 1px #abc2b5; 
 }
 
 /*Блок преимущества*/
+
 .features h3 {
 	font-size: 24px;
 	line-height: 30px;
-}
-
-.features h3,
-.features p {
+	font-weight: 500;
 	color: #323232;
 }
 
 .features {
+	color: #323232;
 	background-color: #eee4cc;
 	background-image: url(../img/bg/pattern.jpg);
 }
@@ -180,7 +266,6 @@ ul {
 	background-color: #ffffff;
 	background-image: url(../img/bg/strawberry-bg.jpg);
 	background-repeat: no-repeat;
-
 }
 
 .blog p {
@@ -190,7 +275,7 @@ ul {
 .blog a {
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	text-decoration-color: #353535; 
 	color: #323232;
 }
@@ -202,6 +287,15 @@ ul {
 
 .subscribe p {
 	color: #5a5a5a;	
+}
+
+.subscribe-form input {
+	font:inherit;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+	background-color: #ffffff;
 }
 
 
@@ -225,7 +319,7 @@ ul {
 .map-info b {
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /*Футер*/
@@ -236,10 +330,11 @@ ul {
 
 .socials a {
 	color: #000000;
+	border-bottom: none;
 }
 
 .footer-menu li:first-child a {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .copyright a,
@@ -248,18 +343,93 @@ ul {
 	line-height: 18px;
 }
 
+.copyright-logo {
+	border-bottom: none;
+}
+
 /*Форма обратной связи*/
 
 .feedback-popup {
 	background-color: #f8f7f4;
 }
 
+.feedback-form input {
+	font:inherit;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+	background-color: #ffffff;
+}
+
 .feedback-form p:first-child {
 	color: #323232;
 	font-size: 24px;
 	line-height: 28px;
+	font-weight: 500;
 }
 
+/*Страница каталог*/
+.catalog h1 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+/*Форма фильтра*/
+
+.filter-form select,
+/*на инпут тайп рэнж фон не работает, предполагаю что заработает в будущем*/
+.filter-form input[type="range"], 
+.filter-form fieldset {
+	background-color: #a9bab0;
+}
+
+.filter-form-item label,
+.filter-form legend {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.fieldset label {
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.filter-form-button {
+	line-height: 18px;
+	font-weight: 500;
+	background-color: #9cb0a4;
+	border: solid 2px #fbfcfb;
+	color: #ffffff;
+}
+
+.filter-form-button:hover {
+	background-color: #fbfcfb;
+	color: #353535;
+}
+
+.filter-form-button:active {
+	background-color: #eaeaea;
+	/*box-shadow*/
+}
+/*Навигация в каталоге*/
+
+.pagination a {
+	font-weight: 500;
+	line-height: 18px;
+	border-bottom: none;
+}
+
+.pagination a:hover {
+	background-color: #9db1a5;
+	color: #ffffff;
+}
+
+.pagination a:active {
+	background-color: #ffffff;
+	color: #323232;
+}
 
 
 
