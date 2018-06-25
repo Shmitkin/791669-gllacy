@@ -1,0 +1,17 @@
+/*OUTLINE*/
+
+.main-header,
+.main-menu,
+.site-menu,
+.user-menu,
+.main-menu-logo {
+	outline: 2px solid #ae031c;
+}
+
+.container {
+	outline: 2px solid #ffffff;
+}
+
+.features-wrap {
+	outline: 2px solid red;
+}

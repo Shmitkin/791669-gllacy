@@ -23,6 +23,18 @@
 	src: url("../fonts/robotobold.woff2") format("woff2"),
 		 url("../fonts/robotobold.woff") format("woff");
 }
+
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
 /*Общие стили*/
 body {
 	margin: 0;
@@ -86,6 +98,64 @@ a:active {
 }
 
 
+.container {	
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 27px;
+}
+/*Сетка хедера*/
+
+.main-menu .container {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.main-header {
+
+
+}
+
+.main-header > .container {
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+}
+.main-menu {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	
+}
+
+.main-menu-logo {
+
+	
+
+}
+
+.site-menu {
+	width: 450px;
+	display: flex;
+	
+}
+
+.user-menu {
+	display: flex;
+	width: 320px;
+	
+}
+
+.main-header-contacts {
+	margin-left: auto;
+
+	
+}
 /*Меню навигации по сайту*/
 
 .main-menu-logo {
@@ -115,6 +185,7 @@ a:active {
 	border-bottom: none;
 }
 
+}
 .site-submenu a {
 	color: #323232;
 	font-size: 14px;
@@ -205,7 +276,11 @@ a:active {
 	font-weight: 700;
 }
 
-
+/*Сетка слайдеров*/
+.novelty  {
+	display: flex;
+	align-items: center;
+}
 /*Слайдеры*/
 
 .novelty-list-item p {
@@ -219,7 +294,18 @@ a:active {
 	line-height: 44px;
 	font-weight: 700;
 }
+/*Сетка блока промо*/
+.promo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
 
+.promo-item {
+	width: 560px;
+	height: 230px;
+}
 /*Блок промо*/
 
 .promo .promo-item:first-of-type {
@@ -245,7 +331,19 @@ a:active {
 	line-height: 22px;
 	font-weight: 700;
 }
+/*Сетка хитов продаж и каталога*/
 
+
+.hits-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hits-list-item {
+	width: 267px;
+}
 /*Блок хитов продаж и каталога*/
 
 .hit-price,
@@ -273,6 +371,8 @@ a:active {
 .catalog-list-item:hover {
 	background-color: #9bafa3;
 }
+/*Сетка блока преимуществ*/
+
 
 /*Блок преимущества*/
 
@@ -283,18 +383,28 @@ a:active {
 	color: #323232;
 }
 
-.features {
+.features-wrap {
 	color: #323232;
 	background-color: #eee4cc;
 	background-image: url(../img/bg/pattern.jpg);
+	width: 1146px;
+	margin-bottom: 40px;
 }
-
+/*Сетка блога и подписки*/
+.blog-subscribe-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
 /*Блок блога*/
 
 .blog {
 	background-color: #ffffff;
 	background-image: url(../img/bg/strawberry-bg.jpg);
 	background-repeat: no-repeat;
+	width: 560px;
+	height: 220px;
 }
 
 .blog p {
@@ -312,6 +422,8 @@ a:active {
 /*Блок подписки*/
 .subscribe {
 	background-color: #f8f7f4;
+	width: 560px;
+	height: 220px;
 }
 
 .subscribe p {
@@ -327,15 +439,24 @@ a:active {
 	background-color: #ffffff;
 }
 
-
+/*Сетка карты*/
+.map .container {
+	padding: 0;
+	display: flex;
+	background-color: #ede6c9;
+	margin-bottom: 20px;
+}
 
 /*Блок карты*/
 
 .map {
-	background-color: #ede6c9;
+	
 }
 
 .map-info {
+	position: absolute;
+	width: 302px;
+	height: 305px;
 	background-color: #ffffff;
 	color: #323232;
 }
@@ -350,7 +471,11 @@ a:active {
 	line-height: 24px;
 	font-weight: 700;
 }
-
+/*Сетка футера*/
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
 /*Футер*/
 
 .socials a {
