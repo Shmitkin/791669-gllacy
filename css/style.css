@@ -79,6 +79,13 @@ a:active {
 	color: #ffffff;
 	background-color: #f06341;
 	border-bottom: none;
+	padding-top: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 12px;
+	background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  	border-radius: 50px;
 }
 
 /*Отключаем кружочки у списков*/
@@ -193,16 +200,17 @@ a:active {
 	color: #333333;
 	border-bottom: none;
 	
+	
 }
 
 .site-menu-link:active {
 	background-color: #ededed;
-	/* и когда сделам дисплей подкрутим бокс шедоу*/
+	box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
-.site-menu-link:focus {
+.site-menu-link:current {
 	background-color: #d07058;
-	color: #333333;
+	color: #ffffff;
 	border-bottom: none;
 }
 
@@ -245,6 +253,7 @@ a:active {
 .user-basket,
 .user-search {
 	display: block;
+	position: relative;
 	padding-left: 44px;
 	padding-right: 17px;
 	padding-bottom: 8px;
@@ -261,6 +270,42 @@ a:active {
 	width: 32px;
 	height: 32px;
 	padding: 0;
+}
+
+.user-login::before {
+	content: "";
+	position: absolute;
+	width: 22px; 
+	height: 22px;
+	left: 17px;
+	top: 6px;
+	background-image: url(../img/decoration/entrance.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;		
+}
+
+.user-search::before {
+	content: "";
+	position: absolute;
+	width: 22px; 
+	height: 22px;
+	left: 7px;
+	top: 7px;
+	background-image: url(../img/decoration/loupe.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+}
+
+.user-basket::before {
+	content: "";
+	position: absolute;
+	width: 22px; 
+	height: 22px;
+	left: 16px;
+	top: 6px;
+	background-image: url(../img/decoration/basket.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
 }
 
 .user-search:hover,
@@ -336,6 +381,7 @@ a:active {
 }
 /*Сетка блока промо*/
 .promo {
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -343,8 +389,11 @@ a:active {
 }
 
 .promo-item {
+	
+	position: relative;
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
+	border-radius: 15px;
 }
 /*Блок промо*/
 
@@ -352,24 +401,37 @@ a:active {
 	background-color: #640122;
 	background-image: url(../img/bg/raspberry-bg.jpg);
 	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .promo .promo-item:last-of-type {
 	background-color: #542c17;
 	background-image: url(../img/bg/chocolate-bg.jpg);
 	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .promo-item h3 {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
+	margin-top: 14px;
+	margin-left: 18px;
+	margin-bottom: 17px;
 }
 
 .promo-item p {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 700;
+	padding: 0 20px;
+	margin: 0;
+}
+
+.promo-item .button {
+	position: absolute;
+	right: 22px;
+	bottom: 25px;
 }
 /*Сетка хитов продаж и каталога*/
 
