@@ -389,7 +389,7 @@ a:active {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 40px;
+	margin-bottom: 34px;
 }
 
 .promo-item {
@@ -440,7 +440,9 @@ a:active {
 }
 /*Сетка хитов продаж и каталога*/
 
-
+.hits {
+	margin: 0;
+}
 
 .catalog-list {
 	padding: 0;
@@ -458,31 +460,61 @@ a:active {
 	width: 293px;
 	min-height: 405px;
 	margin: 0;
-	padding: 0;
+	padding-top: 6px;
+	padding-left: 14px;
+	padding-right: 14px;
 	/*margin-right: 26px;	*/
 	text-align: center;
 }
 
-.catalog-list-item:nth-child(4n) {
-	margin-right: 0;
-}
+/*.catalog-list-item:nth-child(4n) {
+	margin-right: 0;*/
+/*}*/
 
 .catalog-list-item img {
 	border-radius: 133px;
+	margin-bottom: 10px;
 }
 
 .catalog-list-item p {
 	padding: 0;
 	margin: 0;
 	position: absolute;
+	top: 215px;
+	left: 10px;
+}
+
+.catalog-list-item span {
+	padding-left: 35px;
+}
+
+.catalog-list-item p::after {
+	content: "";
+	position: absolute;
+	background-image: url(../img/decoration/ruble.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	width: 35px;
+	height: 35px;
+	top: 8px;
+	left: 82px;
 }
 
 .catalog-list-item a {
+	padding: 0;
 	
-	margin-left: 10px;
-	margin-right: 10px;
 }
 
+.hits .catalog-list-item::before {
+	content: "";
+	position: absolute;
+	width: 64px; 
+	height: 64px;
+	background-image: url(../img/decoration/hit.svg); 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 /*Блок хитов продаж и каталога*/
 
 
