@@ -49,15 +49,15 @@ body {
 
 a {
 	color: #ffffff;
-	border-bottom: solid 1px #abc2b5;
+	/*border-bottom: solid 1px #abc2b5;*/
 	text-decoration: none;	 
 }
 
-a:hover,
+/*a:hover,
 a:active {
 	color: #ffbc9e;
 	border-bottom: solid 1px #a7a294;
-}
+}*/
 
 .visually-hidden {
 	border: 0;
@@ -96,6 +96,9 @@ a:active {
 .pagination,
 .catalog-navigation-list {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+	
 }
 
 
@@ -124,6 +127,7 @@ a:active {
 	display: flex;
 	padding: 0;
 	flex-wrap: wrap;
+	padding-top: 5px;
 }
 
 }
@@ -134,23 +138,31 @@ a:active {
 	
 }
 
+
+
+
+
 .main-menu-logo {
+	padding-top: 4px;
 
 	
 
 }
 
 .site-menu {
-	width: 450px;
+	min-width: 376px;
 	display: flex;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: 0px;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 10px;
+	margin-bottom: 6px;
 	
 }
 
-.user-menu {
-	display: flex;
-	width: 320px;
-	
-}
+
 
 .main-header-contacts {
 	margin-left: auto;
@@ -164,15 +176,23 @@ a:active {
 }
 
 .site-menu-link {
+	display: block;
+	padding: 6px 13px;
+	border-radius: 20px;
+	background-color: transparent;	
 	font-weight: 700;
 	line-height: 18px;
 	
 }
 
 .site-menu-link:hover {
+	display: block;
+	padding: 6px 13px;
+	border-radius: 20px;
 	background-color: #f7f6f3;
 	color: #333333;
 	border-bottom: none;
+	
 }
 
 .site-menu-link:active {
@@ -214,10 +234,40 @@ a:active {
 }
 
 /*Меню пользователя*/
-.user-menu a {
+.user-menu {
+	display: flex;
+	justify-content: space-between;
+	min-width: 245px;
+	margin-bottom: 5px;
+	
+}
+.user-login ,
+.user-basket,
+.user-search {
+	display: block;
+	padding-left: 44px;
+	padding-right: 17px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	background-color: #a1b4a9;
+	text-decoration: none;
+	border-radius: 16px;
 	font-size: 14px;
-	line-height: 18px;
-	font-weight: 400; 
+	line-height: 16px;
+	font-weight: 500; 
+}
+
+.user-search {
+	width: 32px;
+	height: 32px;
+	padding: 0;
+}
+
+.user-search:hover,
+.user-login:hover,
+.user-basket:hover{
+	background-color: #f8f7f4;
+	color: #000000;
 }
 
 .user-menu input {
@@ -237,20 +287,9 @@ a:active {
 	border-bottom: none;
 }
 
-.user-search > a,
-.user-login > a,
-.user-basket > a {
-	background-color: #a1b4a9;
-	text-decoration: none;
-	border-bottom: none;
 }
 
-.user-search > a:hover,
-.user-login > a:hover,
-.user-basket > a:hover{
-	background-color: #f8f7f4;
-	color: #000000;
-}
+
 
 .user-login-form a {
 	color: #323232;
@@ -385,14 +424,55 @@ a:active {
 	line-height: 30px;
 	font-weight: 500;
 	color: #323232;
+	margin: 0;
+	padding: 0;
+	margin-top: 25px;
+	margin-bottom: 20px;
+
+
 }
 
 .features-wrap {
+	display: flex;
+	flex-direction: column;
 	color: #323232;
 	background-color: #eee4cc;
 	background-image: url(../img/bg/pattern.jpg);
 	width: 1146px;
+	min-height: 305px;
 	margin-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 22px;
+	border-radius: 15px;
+	
+}
+
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 56px;
+	align-items: stretch;
+	align-content: stretch;
+
+}
+.features-list-item {
+	width: 480px;
+	margin-bottom: 21px;
+	
+
+}
+
+.features-list-item p {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400; 
+	
+	
+	
 }
 /*Сетка блога и подписки*/
 .blog-subscribe-wrap {

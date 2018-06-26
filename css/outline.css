@@ -11,7 +11,14 @@
 .container {
 	outline: 2px solid #ffffff;
 }
-
+/*
 .features-wrap {
 	outline: 2px solid red;
+}*/
+.features-list {
+	outline: 2px solid yellow;
+}
+.features-list-item,
+.features h3 {
+	outline: 2px solid blue;
 }
