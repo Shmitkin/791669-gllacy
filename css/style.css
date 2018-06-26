@@ -78,7 +78,7 @@ a:active {
 	font-weight: 700;
 	color: #ffffff;
 	background-color: #f06341;
-	border-bottom: none;
+	border: none;
 	padding-top: 8px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -176,7 +176,10 @@ a:active {
 
 
 .main-header-contacts {
+	text-align: right;
 	margin-left: auto;
+	margin-top:-5px;
+	margin-right: 25px;
 
 	
 }
@@ -389,7 +392,7 @@ a:active {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 34px;
+	margin-bottom: 32px;
 }
 
 .promo-item {
@@ -458,7 +461,7 @@ a:active {
 .catalog-list-item {
 	position: relative;
 	width: 293px;
-	min-height: 405px;
+	min-height: 368px;
 	margin: 0;
 	padding-top: 6px;
 	padding-left: 14px;
@@ -473,15 +476,15 @@ a:active {
 
 .catalog-list-item img {
 	border-radius: 133px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 
 .catalog-list-item p {
 	padding: 0;
 	margin: 0;
 	position: absolute;
-	top: 215px;
-	left: 10px;
+	top: 212px;
+	left: 12px;
 }
 
 .catalog-list-item span {
@@ -585,10 +588,57 @@ a:active {
 
 }
 .features-list-item {
+	position: relative;
 	width: 480px;
 	margin-bottom: 21px;
-	
+}
 
+.features-list-item:first-child::before {
+	content:"";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/decoration/ice-cream.svg); 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: -11px;
+	left: -56px;
+}
+
+.features-list-item:nth-child(2)::before {
+	content:"";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/decoration/cow.svg); 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: -11px;
+	left: -58px;
+}
+
+.features-list-item:nth-child(3)::before {
+	content:"";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/decoration/eco.svg); 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: -11px;
+	left: -56px;
+}
+
+.features-list-item:nth-child(4)::before {
+	content:"";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/decoration/thermometer.svg); 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: -11px;
+	left: -58px;
 }
 
 .features-list-item p {
@@ -607,40 +657,88 @@ a:active {
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	padding: 0;
 }
 /*Блок блога*/
 
 .blog {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 	background-color: #ffffff;
 	background-image: url(../img/bg/strawberry-bg.jpg);
 	background-repeat: no-repeat;
+	background-position: -53px -223px;
 	width: 560px;
 	height: 220px;
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-top: 25px;
 }
 
 .blog p {
 	color:#323232;
+	line-height: 22px;
+	font-size: 16px;
+	font-weight: 500;
+	min-width: 200px;
+	padding: 0;
+	margin: 0;
 }
 
-.blog a {
+.blog-news {
+	padding: 0;
+	margin: 0;
+	max-width: 300px;
+
+}
+
+.blog-news a {
+	padding: 0;
+	margin: 0;
+	color: #323232;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
-	text-decoration-color: #353535; 
-	color: #323232;
+	border-bottom: 2px solid #353535;
 }
 
 /*Блок подписки*/
-.subscribe {
-	background-color: #f8f7f4;
+.subscribe-wrap {
+	margin: 0;
+	min-height:220px; 
 	width: 560px;
-	height: 220px;
+	padding: 5px;
+	background-image: url(../img/decoration/letter-bg.svg);
+}
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 20px;
+	margin: 0;
+	background-color: #f8f7f4;
+	width: 550px;
+	height: 210px;
+	border-radius: 15px;
 }
 
+.subscribe-form {
+	display: flex;
+	align-items: stretch;
+
+}
 .subscribe p {
+	padding: 0;
+	margin: 0;
 	color: #5a5a5a;	
+	margin-bottom: 35px;
 }
 
+.subscribe-form .button {
+	margin-left: 7px;
+}
+/*Не понимаю как сделать чтобы у плейсхолдера был отступ слева*/
 .subscribe-form input {
 	font:inherit;
 	font-size: 16px;
@@ -648,6 +746,10 @@ a:active {
 	font-weight: 400;
 	color: #999999;
 	background-color: #ffffff;
+	min-height: 44px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+	flex-grow: 1;
 }
 
 /*Сетка карты*/

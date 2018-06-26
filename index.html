@@ -69,23 +69,27 @@
   	<div class="container">
   		<section class="novelty">
   			<h2 class="visually-hidden">Новинки</h2>
-  			
-  			<ul class="novelty-list">
-  				<li class="novelty-list-item">
-	  			 		<img src="img/content/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-  					<p>Крем-брюле и пломбир с малиновым джемом</p>
-  					<a href="#" class="button">Давайте оба!</a>
+  			<div class="slider-controls">
+	            <label for="product-1">Первый</label>
+	            <label for="product-2">Второй</label>
+	            <label for="product-3">Третий</label>
+          	</div>
+  			<ul class="slider-list">
+  				 <li class="slider-item slide" id="slide1">
+	  			 	<!-- <img src="img/content/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом"> -->
+  					<h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+  					<a href="#" class="button slide-button">Давайте оба!</a>
   				</li>
- 	 		<!-- 	<li class="novelty-list-item">
- 	 				<img src="img/content/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
- 	 			 	<p>Шоколадный пломбир и лимонный сорбет</p>
- 	 			 	<a href="#" class="button">Давайте оба!</a>
+ 	 			 <li class="slider-item slide" id="slide2">
+ 	 				<!-- <img src="img/content/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет"> -->
+ 	 			 	<h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+ 	 			 	<a href="#" class="button slide-button">Давайте оба!</a>
  	 		    </li>
-	  			<li class="novelty-list-item">
-	  				<img src="img/content/slider-3.png" width="1045" height="881"  alt="Пломбир с помадкой и клубничный щербет">
-	  				<p>Пломбир с помадкой и клубничный щербет</p>
-	  				<a href="#" class="button">Давайте оба!</a>
-	  			</li> -->
+	  			 <li class="slider-item slide" id="slide3">
+	  				<!-- <img src="img/content/slider-3.png" width="1045" height="881"  alt="Пломбир с помадкой и клубничный щербет"> -->
+	  				<h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+	  				<a href="#" class="button slide-button">Давайте оба!</a>
+	  			</li>
 	  		</ul>
 	  		
 	  	</section>
@@ -163,17 +167,21 @@
 	  	<div class="blog-subscribe-wrap">
 		  	<section class="blog">
 		  		<p>Новое в нашем блоге</p>
-		  		<a class="blog-news" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+		  		<div class="blog-news">
+		  			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+		  		</div>
 		  	</section>
-		  	<section class="subscribe">
-		  		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
-		  		что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-		  		<form class="subscribe-form" method="post">
-		  			<label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
-		  			<input type="email" id="subscribe-form-email" name="email" placeholder="Электронная почта">
-		  			<button type="submit" class="button">Отправить</button>
-		  		</form>
-		  	</section>
+		  	<div class="subscribe-wrap">
+			  	<section class="subscribe">
+			  		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, 
+			  		что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+			  		<form class="subscribe-form" method="post">
+			  			<label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
+			  			<input type="email" id="subscribe-form-email" name="email" placeholder="Электронная почта">
+			  			<button type="submit" class="button">Отправить</button>
+			  		</form>
+			  	</section>
+		    </div>
 		 </div>
 	</div>
 
