@@ -114,6 +114,10 @@ a:active {
 	margin: 0 auto;
 	padding: 0 27px;
 }
+
+.catalog-container {
+	padding: 0;
+}
 /*Сетка хедера*/
 
 .main-menu .container {
@@ -394,6 +398,7 @@ a:active {
 	width: 560px;
 	min-height: 230px;
 	border-radius: 15px;
+	padding-bottom: 90px;
 }
 /*Блок промо*/
 
@@ -436,29 +441,57 @@ a:active {
 /*Сетка хитов продаж и каталога*/
 
 
-.hits-list,
+
 .catalog-list {
 	padding: 0;
 	margin: 0;
+	margin-left: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+
 	flex-wrap: wrap;
 }
 
-.hits-list-item,
+
 .catalog-list-item {
-	width: 267px;
+	position: relative;
+	width: 293px;
+	min-height: 405px;
+	margin: 0;
+	padding: 0;
+	/*margin-right: 26px;	*/
+	text-align: center;
 }
+
+.catalog-list-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.catalog-list-item img {
+	border-radius: 133px;
+}
+
+.catalog-list-item p {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+
+.catalog-list-item a {
+	
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 /*Блок хитов продаж и каталога*/
 
-.hit-price,
+
 .item-price {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
 }
 
-.hit-price span,
 .item-price span {
 	font-size: 30px;
 	line-height: 45px;
@@ -467,7 +500,7 @@ a:active {
 
 /*Вот сейчас подчеркивается абзац на всю ширину, изменится ли подчеркивание когда я задам display: inline-block или block?
 или нужно использовать другой метод?*/
-.hit-name,
+
 .item-name {   
 	font-weight: 500;
 	border-bottom: solid 1px #abc2b5; 
