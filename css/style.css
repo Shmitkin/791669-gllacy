@@ -892,9 +892,28 @@ a:active {
 	font-weight: 700;
 }
 /*Сетка футера*/
-footer .container {
+.footer-container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.socials {
+	display: flex;
+	max-width: 267px;
+}
+
+.footer-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	max-width: 400px;
+	align-items: baseline;
+	align-content: center;
+}
+
+.footer-menu li {
+	min-width: 130px;
+	margin-left: 10px;
 }
 /*Футер*/
 
@@ -915,10 +934,18 @@ footer .container {
 	border-color: #dae2de;
 }
 
+.footer-menu a {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	border-bottom: solid 1px #abc2b5;
+}
 
 .footer-menu li:first-child a {
 	font-weight: 700;
 }
+
+
 
 .copyright a,
 .copyright p {
