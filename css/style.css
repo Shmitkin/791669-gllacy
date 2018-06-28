@@ -383,9 +383,12 @@ a:active {
 }
 
 /*Сетка слайдеров*/
-.novelty  {
-	position: relative;
-	text-align: center;
+.slider  {
+	position: relative; 
+  	padding-top: 260px;  
+  	text-align: center;
+  	color: #ffffff;
+  	margin-bottom: 40px;
 
 }
 .site-wrapper {
@@ -419,13 +422,14 @@ a:active {
 }
 
 .slide {
+	display: none;
 	
 }
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   margin-right: 8px;
 
   vertical-align: top;
@@ -438,7 +442,7 @@ a:active {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 22px;
   left: 0;
   z-index: 10;
   font-size: 0;
@@ -451,27 +455,30 @@ a:active {
 	font-weight: 700;
 	margin: 0 auto;
 	width: 680px;
+	margin-bottom: 36px;
 }
 
-.novelty .button {
+.slider .button {
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 700;
+	padding-left: 40px; 
+	padding-right:40px;
 }
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("img/slider-item1.png");
+  background-image: url(../img/content/slider-1.png);
 }
 
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("img/slider-item2.png");
+  background-image: url(../img/content/slider-2.png);
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("img/slider-item3.png");
+  background-image: url(../img/content/slider-3.png);
 }
 
 #product-1:checked ~ .site-wrapper #slide1,
