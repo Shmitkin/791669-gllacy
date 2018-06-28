@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/outline.css">
   </head>
   <body>
+  	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  	<div class="site-wrapper">
   	<header class="main-header">
   		<div class="container">
-
-  		
 	  		<nav class="main-menu">
 	  			<div class="container">
 		  			<a class="main-menu-logo">
@@ -74,26 +76,28 @@
 	            <label for="product-2">Второй</label>
 	            <label for="product-3">Третий</label>
           	</div>
+          
   			<ul class="slider-list">
   				 <li class="slider-item slide" id="slide1">
 	  			 	<!-- <img src="img/content/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом"> -->
   					<h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-  					<a href="#" class="button slide-button">Давайте оба!</a>
+  					<a href="#" class="button slider-button">Давайте оба!</a>
   				</li>
  	 			 <li class="slider-item slide" id="slide2">
  	 				<!-- <img src="img/content/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет"> -->
  	 			 	<h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
- 	 			 	<a href="#" class="button slide-button">Давайте оба!</a>
+ 	 			 	<a href="#" class="button slider-button">Давайте оба!</a>
  	 		    </li>
 	  			 <li class="slider-item slide" id="slide3">
 	  				<!-- <img src="img/content/slider-3.png" width="1045" height="881"  alt="Пломбир с помадкой и клубничный щербет"> -->
 	  				<h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
-	  				<a href="#" class="button slide-button">Давайте оба!</a>
+	  				<a href="#" class="button slider-button">Давайте оба!</a>
 	  			</li>
 	  		</ul>
 	  		
 	  	</section>
-	  	<section class="promo">
+	</div>
+	  	<section class="promo container">
 	  		<h2 class="visually-hidden">Промо предложения</h2>
 			<div class="promo-item">
 	 			<h3>Малинка даром!</h3>
@@ -108,7 +112,7 @@
 	  			<a href="#" class="button">Хочу шоколадки!</a>
 	  		</div>
 	  	</section>
-	</div>
+	
 	<div class="container catalog-container">
 		  	<section class="hits">
 
@@ -253,7 +257,8 @@
   		<button type="submit" class="button">Отправить</button>
   	</form>
   	<button class="button-popup-close" type="button">Закрыть</button>
-  </div>
+  	</div>
+	</div>
   </body>
 </html>
 		
