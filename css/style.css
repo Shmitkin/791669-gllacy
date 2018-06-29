@@ -431,13 +431,19 @@ a:active {
   width: 21px;
   height: 21px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls label:hover {
+	background-color: #b2c1b7;
+}
+
+.slider-controls label:active {
+	background-color: #ffffff;
 }
 
 .slider-controls {
@@ -895,11 +901,17 @@ a:active {
 .footer-container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	min-height: 102px;
 }
 
 .socials {
 	display: flex;
-	max-width: 267px;
+	width: 186px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-menu {
@@ -909,40 +921,96 @@ a:active {
 	max-width: 400px;
 	align-items: baseline;
 	align-content: center;
+	margin: 0;
+	padding: 0;
+	margin-left: 80px;
 }
 
 .footer-menu li {
-	min-width: 130px;
+	min-width: 131px;
 	margin-left: 10px;
 }
 /*Футер*/
 
-.socials a {
+.social-button {
+	display: flex;
+	width: 38px;
+	height: 38px;
+	align-items: center;
+	justify-content: center;
 	color: #000000;
 	border-bottom: none;
-	background-color: #e6ebe9;
-	border: solid 3px #c2cec7;
+	border-radius: 19px;
+	border: 2px solid #c2cec7;
+		
 }
 
-.socials a:hover {
-	background-color: #ffffff;
+.social-button:hover {
+	/*background-color: #ffffff;*/
 	border-color: #dae2de;
 }
 
-.socials a:active {
-	background-color: #e9e9e9;
+.social-button:active {
+	/*background-color: #e9e9e9;*/
 	border-color: #dae2de;
 }
 
-.footer-menu a {
+.social-button:hover path {
+	fill: #ffffff
+}
+
+.social-button:active path {
+	fill: #e9e9e9;
+}
+
+.footer-menu-link {
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
 	border-bottom: solid 1px #abc2b5;
 }
+.copyright-link:hover,
+.footer-menu-link:hover {
+	color: #ffbc9e;
+	border-bottom: solid 1px #a7a294;
+}
 
-.footer-menu li:first-child a {
+.copyright-link:active,
+.footer-menu-link:active {
+	color:#c2ac96;
+	border-bottom: solid 1px #a7a294;
+}
+
+.first-link {
 	font-weight: 700;
+	position: relative;
+}
+
+.first-link::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 18px; 
+	height: 18px;
+	background-image: url(../img/decoration/heart.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: 2px;
+	left: -20px;
+}
+
+.copyright {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	align-self: baseline;
+	margin-top: 12px;
+
+}
+
+.copyright-link {
+	border-bottom: solid 1px #abc2b5;
 }
 
 
@@ -951,9 +1019,12 @@ a:active {
 .copyright p {
 	font-size: 12px;
 	line-height: 18px;
+	margin: 0;
+	padding: 0;
 }
 
 .copyright-logo {
+	margin-bottom: 5px;
 	border-bottom: none;
 }
 
