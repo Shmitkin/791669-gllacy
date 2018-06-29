@@ -155,7 +155,7 @@ a:active {
 	padding-top: 5px;
 }
 
-}
+
 .main-menu {
 	display: flex;
 	align-items: center;
@@ -235,7 +235,7 @@ a:active {
 	border-bottom: none;
 }
 
-}
+
 .site-submenu a {
 	color: #323232;
 	font-size: 14px;
@@ -353,7 +353,6 @@ a:active {
 	border-bottom: none;
 }
 
-}
 
 
 
