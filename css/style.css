@@ -265,9 +265,12 @@ a:active {
 /*Меню пользователя*/
 .user-menu {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	min-width: 245px;
+	margin: 0;
+	padding: 0;
 	margin-bottom: 5px;
+	margin-left: auto;
 	
 }
 .user-login ,
@@ -279,12 +282,17 @@ a:active {
 	padding-right: 17px;
 	padding-bottom: 8px;
 	padding-top: 8px;
-	background-color: #a1b4a9;
+	background-color: rgba(255, 255, 255, 0.2);
 	text-decoration: none;
 	border-radius: 16px;
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 500; 
+	font-weight: 500;
+	margin-right: 10px; 
+}
+
+.user-basket {
+	margin-right: 0;
 }
 
 .user-search {
@@ -293,7 +301,46 @@ a:active {
 	padding: 0;
 }
 
-.user-login::before {
+.user-search:hover,
+.user-login:hover,
+.user-basket:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: #000000;
+}
+
+.user-search svg {
+	position: absolute;
+	left: 7px;
+	top: 7px;
+}
+
+.user-search:hover path {
+	fill: #000000;
+}
+
+.user-login svg {
+	position: absolute;
+	left: 17px;
+	top: 6px;
+}
+
+.user-login:hover path {
+	fill: #000000;
+}
+
+.user-basket svg {
+	position: absolute;
+	left: 16px;
+	top: 6px;
+}
+
+.user-basket:hover path,
+.user-basket:hover circle {
+	fill: #000000;
+}
+
+
+/*.user-login::before {
 	content: "";
 	position: absolute;
 	width: 22px; 
@@ -303,9 +350,8 @@ a:active {
 	background-image: url(../img/decoration/entrance.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;		
-}
-
-.user-search::before {
+}*/
+/*.user-search::before {
 	content: "";
 	position: absolute;
 	width: 22px; 
@@ -314,10 +360,10 @@ a:active {
 	top: 7px;
 	background-image: url(../img/decoration/loupe.svg);
 	background-repeat: no-repeat;
-	background-position: 0 0;	
-}
+	background-position: 0 0;*/	
+/*}*/
 
-.user-basket::before {
+/*.user-basket::before {
 	content: "";
 	position: absolute;
 	width: 22px; 
@@ -327,14 +373,9 @@ a:active {
 	background-image: url(../img/decoration/basket.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;	
-}
+}*/
 
-.user-search:hover,
-.user-login:hover,
-.user-basket:hover{
-	background-color: #f8f7f4;
-	color: #000000;
-}
+
 
 .user-menu input {
 	font:inherit;
@@ -371,14 +412,17 @@ a:active {
 /*Контакты*/
 .main-header-contacts {
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 24px;
 	font-weight: 700;
+	margin-top: -10px;
+	margin-bottom: 10px;
 }
 
 .main-header-contacts span {
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 700;
+
 }
 
 /*Сетка слайдеров*/
@@ -653,8 +697,19 @@ a:active {
 	border-bottom: solid 1px #abc2b5; 
 }
 
+.item-name:hover {
+	color: #e84d37;
+	border-bottom: solid 1px #f9cdc4;
+}
+
+.item-name:active {
+	color: #e84d37;
+	border-bottom: solid 1px #f9cdc4;
+
+}
+
 .catalog-list-item:hover {
-	background-color: #9bafa3;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 /*Сетка блока преимуществ*/
 
@@ -816,6 +871,17 @@ a:active {
 	border-bottom: 2px solid #353535;
 }
 
+.blog-news a:hover {
+	color: #e84d37;
+	border-bottom: solid 1px #f9cdc4;
+}
+
+.blog-news a:active {
+	color: #e84d37;
+	border-bottom: solid 1px #f9cdc4;
+
+}
+
 /*Блок подписки*/
 .subscribe-wrap {
 	margin: 0;
@@ -850,7 +916,7 @@ a:active {
 .subscribe-form .button {
 	margin-left: 7px;
 }
-/*Не понимаю как сделать чтобы у плейсхолдера был отступ слева*/
+
 .subscribe-form input {
 	font:inherit;
 	font-size: 16px;
@@ -862,6 +928,8 @@ a:active {
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 	flex-grow: 1;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /*Сетка карты*/
