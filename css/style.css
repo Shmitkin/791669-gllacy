@@ -384,6 +384,42 @@ a:active {
 	fill: #000000;
 }
 
+.user-menu li {
+	position: relative;
+}
+.user-search-form {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	top: 36px;
+	right: 8px;
+	/*padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+	padding-right: 15px;*/
+	background-color: #f8f7f4;
+	min-width: 342px;
+	border-radius: 5px;
+}
+
+.user-search-form input {
+	min-width: 312px;
+	height: 44px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+.user-menu li:first-child:hover .user-search-form {
+	display: flex;
+}
+
+
 
 /*.user-login::before {
 	content: "";
