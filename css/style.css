@@ -271,11 +271,20 @@ a:active {
 	padding: 0;
 	margin: 0;
 	min-width: 143px;
-	background-color: transparent;
-	top: 30px;
+	background-color: #f8f7f4;
+	top: 35px;
 	left: -5px;
-	border-radius: 7px;
-	padding-top: 5px;
+	border-radius: 7px;	
+}
+.site-submenu::before {
+	content: "";
+	position: absolute;
+	background-color: transparent;
+	width: 90px;
+	height: 10px;
+	top: -10px;
+	left: 5px;
+
 }
 
 .site-menu li:first-child:hover .site-submenu {
@@ -292,19 +301,29 @@ a:active {
 }
 
 .site-submenu li:first-child a {
-	padding-top: 10px;
-	padding-bottom: 13px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	margin-bottom: 1px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	font-weight: 700;
-	border-bottom: solid 1px #d1d0ce;
-
 }
 
 .site-submenu li:last-child a {
 	padding-bottom: 15px;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
+}
+
+.site-submenu li:first-child::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 128px;
+	position: absolute;
+	left: 6px;
+	top: 43px;
+	background-color: #d1d0ce;
 }
 
 /*Меню пользователя*/
@@ -316,7 +335,6 @@ a:active {
 	padding: 0;
 	margin-bottom: 5px;
 	margin-left: auto;
-	
 }
 .user-login ,
 .user-basket,
@@ -400,6 +418,19 @@ a:active {
 	background-color: #f8f7f4;
 	min-width: 342px;
 	border-radius: 5px;
+
+}
+
+.user-search-form::before {
+	content: "";
+	display: block;
+	background-color: transparent;
+	height: 10px;
+	width: 100px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+
 }
 
 .user-search-form input {
@@ -414,6 +445,8 @@ a:active {
 	padding-left: 15px;
 	padding-right: 5px;
 }
+
+
 
 .user-menu li:first-child:hover .user-search-form {
 	display: flex;
