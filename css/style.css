@@ -184,7 +184,10 @@ a:active {
 	justify-content: space-between;
 	margin-left: 10px;
 	margin-bottom: 6px;
-	
+}
+
+.site-menu > li {
+	position: relative;
 }
 
 
@@ -229,11 +232,13 @@ a:active {
 	box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
-.site-menu-link:current {
+/*.site-menu-link:current {
 	background-color: #d07058;
 	color: #ffffff;
 	border-bottom: none;
 }
+*/
+
 
 
 .site-submenu a {
@@ -245,10 +250,7 @@ a:active {
 	background-color: #f8f7f4;
 }
 
-.site-submenu li:first-child a {
-	font-weight: 700;
-	border-bottom: solid 1px #d1d0ce;
-}
+
 
 .site-submenu a:hover {
 	background-color: #fbded7;
@@ -257,9 +259,52 @@ a:active {
 .site-submenu a:active {
 	background-color: #f6b5a5;
 }
-/*здесь нужен visited или focus?*/
-.site-submenu a:focus {    
+
+/*.site-submenu a:focus {    
 	background-color: #d07058;
+}
+*/
+.site-submenu {
+	position: absolute;
+	display: none;
+	z-index: 10;
+	padding: 0;
+	margin: 0;
+	min-width: 143px;
+	background-color: transparent;
+	top: 30px;
+	left: -5px;
+	border-radius: 7px;
+	padding-top: 5px;
+}
+
+.site-menu li:first-child:hover .site-submenu {
+	display: block;
+}
+
+
+.site-submenu a {
+	display: block;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+	background-color: #f8f7f4;
+}
+
+.site-submenu li:first-child a {
+	padding-top: 10px;
+	padding-bottom: 13px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-weight: 700;
+	border-bottom: solid 1px #d1d0ce;
+
+}
+
+.site-submenu li:last-child a {
+	padding-bottom: 15px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 /*Меню пользователя*/
