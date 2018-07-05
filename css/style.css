@@ -511,16 +511,82 @@ a:active {
 
 
 
-.user-login-form a {
+.login-container a {
 	color: #323232;
 	text-decoration: none;
 	border-bottom: solid 1px #323232;
+	font-size: 13px;
+	line-height: 14px;
+	font-weight: 400;
+
 }
 
-.user-login-form a:hover,
-.user-login-form a:active {
+.login-container a:hover,
+.login-container a:active {
 	color: #e84d37;
 	border-bottom: solid 1px #f9cdc4;
+}
+
+.user-login-form p {
+	margin: 0;
+	padding: 0;
+}
+.user-login-form {
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	align-items: center;
+	width: 278px;
+	min-height: 214px;
+	background-color: #f8f7f4;
+	padding: 20px;
+	border-radius: 5px;
+	top: 36px;
+	right: 8px;
+	z-index: 10;
+}
+
+.user-login-form::before {
+	content: "";
+	display: block;
+	background-color: transparent;
+	height: 10px;
+	width: 100px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+
+}
+
+.user-login-form input {
+	width: 240px;
+	height: 44px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+}
+
+.login-container {
+	width: 238px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.login-button {
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 8px;
+
+}
+
+.user-menu li:nth-child(2):hover .user-login-form {
+	display: flex;
 }
 
 /*Контакты*/
