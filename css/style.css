@@ -1134,7 +1134,7 @@ a:active {
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 	flex-grow: 1;
-	padding-left: 10px;
+	padding-left: 15px;
 	padding-right: 10px;
 }
 
@@ -1144,6 +1144,7 @@ a:active {
 	display: flex;
 	background-color: #ede6c9;
 	margin-bottom: 20px;
+	position: relative;
 }
 
 /*Блок карты*/
@@ -1158,17 +1159,35 @@ a:active {
 	height: 305px;
 	background-color: #ffffff;
 	color: #323232;
+	right: 27px;
+	top: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 30px;
+	border-radius: 15px;
+
 }
 
 .map-info p {
 	font-size: 14px;
 	line-height: 20px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 .map-info b {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
+}
+
+.map-info .button {
+	text-align: center;
 }
 /*Сетка футера*/
 .footer-container {
