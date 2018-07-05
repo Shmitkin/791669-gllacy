@@ -789,7 +789,6 @@ a:active {
 	margin-left: 15px;
 	display: flex;
 	justify-content: flex-start;
-
 	flex-wrap: wrap;
 }
 
@@ -804,15 +803,20 @@ a:active {
 	padding-right: 14px;
 	/*margin-right: 26px;	*/
 	text-align: center;
+	border-radius: 7px;
 }
 
+/*.catalog-list-ltem:hover {
+	position: absolute;
+	background-color: black;
+}*/
 /*.catalog-list-item:nth-child(4n) {
 	margin-right: 0;*/
 /*}*/
 
 .catalog-list-item img {
 	border-radius: 133px;
-	margin-bottom: 7px;
+	margin-bottom: 2px;
 }
 
 .catalog-list-item p {
@@ -842,6 +846,7 @@ a:active {
 
 .catalog-list-item a {
 	padding: 0;
+
 	
 }
 
@@ -875,6 +880,7 @@ a:active {
 .item-name {   
 	font-weight: 500;
 	border-bottom: solid 1px #abc2b5; 
+
 }
 
 .item-name:hover {
@@ -888,9 +894,29 @@ a:active {
 
 }
 
+.catalog-list .item-button {
+	display: none;
+	position: absolute;
+	bottom: 20px;
+	left: 46px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 20px;
+	padding-top: 9px;
+	padding-bottom: 12px;
+}
+
 .catalog-list-item:hover {
 	background-color: rgba(255, 255, 255, 0.2);
+	min-height: 405px;
 }
+
+.catalog-list-item:hover .item-button {
+	display: block;
+}
+
+
+
 /*Сетка блока преимуществ*/
 
 
