@@ -101,8 +101,8 @@
           <h1>Сливочное мороженое</h1>
           <!-- Здесь будет форма -->
           <form class="filter-form" method="get">
-            <p class="filter-form-item">
-              <label for="filter-form-type">Сортировка</label>
+            <p class="filter-form-item filter-type">
+              <label for="filter-form-type">Сортировка:</label>
               <select name="filter-form-type" id="filter-form-type">
                 <option value="popular">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
@@ -110,34 +110,83 @@
                 <option value="fatness">по жирности</option>
               </select>
             </p>
-            <p class="filter-form-item"> 
-              <label for="filter-form-price">Цена</label>
-              <input type="range" min="0" max="800" step="100" name="filter-form-price" id="filter-form-price">
-            </p>
-              <fieldset class="filter-form-fatness">
+              <p class="filter-form-item filter-price"> 
+                <label for="filter-form-price">Цена</label>
+                <input type="range" min="0" max="800" step="100" name="filter-form-price" id="filter-form-price">
+              </p>
+
+            
+              <fieldset class="filter-form-fatness filter-fatness">
                 <legend>Жирность:</legend>
-                <input type="radio" name="filter-form-fatness" id="fatness-0" value="0%">
-                <label for="fatness-0">0%</label>
-                <input type="radio" name="filter-form-fatness" id="fatness-10" value="10%">
-                <label for="fatness-10">до 10%</label>
-                <input type="radio" name="filter-form-fatness" id="fatness-before30" value="before30%">
-                <label for="fatness-before30">до 30%</label>
-                <input type="radio" name="filter-form-fatness" id="fatness-after30" value="after30%">
-                <label for="fatness-after30">выше 30%</label>
-              </fieldset>          
+                <label for="fatness-0">
+                  <input type="radio" name="filter-form-fatness" id="fatness-0" value="0%" class="visually-hidden">
+                  <span class="filter-fatness-radio">
+               
+
+                  </span>
+                0%
+                  
+                </label>
+                <label for="fatness-10">
+                  <input type="radio" name="filter-form-fatness" id="fatness-10" value="10%" class="visually-hidden">
+                  <span class="filter-fatness-radio">
+                  
+                  </span>
+                до 10%
+                 
+                </label>
+                <label for="fatness-before30">
+                  <input type="radio" name="filter-form-fatness" id="fatness-before30" value="before30%" class="visually-hidden">
+                  <span class="filter-fatness-radio">
+                    
+                    </svg>
+                  </span>
+                до 30%
+                 
+                </label>
+                <label for="fatness-after30">
+                  <input type="radio" name="filter-form-fatness" id="fatness-after30" value="after30%" class="visually-hidden">
+                  <span class="filter-fatness-radio">
+                   
+                  </span>
+                выше 30%
+                  
+                </label>
+              </fieldset>  
+            
+
+
               <fieldset class="filter-form-filling">
                 <legend>Наполнители:</legend>
-                <input type="checkbox" name="chocolate" id="chocolate-filling" value="chocolate" checked>
-                <label for="chocolate-filling">шоколадные</label>
-                <input type="checkbox" name="sugar" id="sugar-filling" value="sugar" checked>
-                <label for="sugar-filling">сахарные присыпки</label>
-                <input type="checkbox" name="fruits" id="fruits-filling" value="fruits">
-                <label for="fruits-filling">фрукты</label>
-                <input type="checkbox" name="syrop" id="syrop-filling" value="syrop">
-                <label for="syrop-filling">сиропы</label>
-                <input type="checkbox" name="jam" id="jam-filling" value="jam">
-                <label for="jam-filling">джемы</label>
+                <label for="chocolate-filling">
+                  <input type="checkbox" name="chocolate" id="chocolate-filling" value="chocolate" checked class="visually-hidden">
+                  <span class="filter-filling-checkbox"></span>
+                шоколадные
+
+                </label>
+                <label for="sugar-filling">
+                  <input type="checkbox" name="sugar" id="sugar-filling" value="sugar" checked class="visually-hidden">
+                  <span class="filter-filling-checkbox"></span>
+                сахарные присыпки
+                </label>
+                <label for="fruits-filling">
+                  <input type="checkbox" name="fruits" id="fruits-filling" value="fruits" class="visually-hidden">
+                  <span class="filter-filling-checkbox"></span>
+                фрукты
+                </label>
+                <label for="syrop-filling">
+                  <input type="checkbox" name="syrop" id="syrop-filling" value="syrop" class="visually-hidden">
+                  <span class="filter-filling-checkbox"></span>
+                сиропы
+                </label>
+                <label for="jam-filling">
+                  <input type="checkbox" name="jam" id="jam-filling" value="jam" class="visually-hidden">
+                  <span class="filter-filling-checkbox"></span>
+                джемы
+                </label>
               </fieldset>
+
+
             <button type="submit" class="filter-form-button">Применить</button>
           </form>
         </div>
