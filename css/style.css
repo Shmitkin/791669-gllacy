@@ -1785,7 +1785,7 @@ a:active {
 
 .filter-form-button:active {
   background-color: rgb(237, 237, 237);
-  	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105);
+  	box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
   	border:none;
  	padding: 9px 29px;
 	padding-top: 10px;
