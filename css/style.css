@@ -1143,7 +1143,7 @@ a:active {
 	padding: 0;
 	display: flex;
 	background-color: #ede6c9;
-	margin-bottom: 20px;
+	margin-bottom: 2px;
 	position: relative;
 }
 
@@ -1323,7 +1323,33 @@ a:active {
 /*Форма обратной связи*/
 
 .feedback-popup {
+	display: none;
+	position: fixed;
+	top: 339px;
+	left: 50%;
+	margin-left: -238px;
 	background-color: #f8f7f4;
+	width: 478px;
+	height: 442px;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.feedback-popup p {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	width: 438px;
+	height: 402px;
 }
 
 .feedback-form input {
@@ -1333,6 +1359,12 @@ a:active {
 	font-weight: 400;
 	color: #999999;
 	background-color: #ffffff;
+	width: 268px;
+	min-height: 44px;
+	padding-left: 15px;
+	padding-right: 10px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
 }
 
 .feedback-form p:first-child {
@@ -1340,6 +1372,72 @@ a:active {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
+}
+
+.feedback-form textarea {
+	width: 426px;
+	min-height: 155px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.feedback-form .button {
+	margin-left: auto;
+	margin-right: 10px;
+	padding-left: 25px;
+}
+
+.button-popup-close {
+	position: absolute;
+	top: 13px;
+	right: 15px;
+	width: 20px;
+	height: 20px;
+	font-size: 0px;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+}
+
+.button-popup-close::before,
+.button-popup-close::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #231f20;
+  top: 8px;
+  left: 0px;
+}
+
+.button-popup-close::before {
+  transform: rotate(45deg);
+}
+
+.button-popup-close::after {
+  transform: rotate(-45deg);
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+	font: inherit;
+    color: #000000;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea:hover {
+	border: 2px solid #c7c6c5;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+	border: 2px solid #8fbdec;
 }
 
 /*Страница каталог*/
