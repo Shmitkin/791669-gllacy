@@ -1534,6 +1534,8 @@ a:active {
 /*пробная сетка к форме фильтра*/
 .catalog h1 {
 	margin:0;
+	margin-top: -14px;
+	margin-bottom: 35px;
 }
 
 .filter-form-item p {
@@ -1543,12 +1545,11 @@ a:active {
 
 .filter-form {
 	display: flex;
-	align-items: center;
 	min-width: 865px;
-	min-height: 100px;
+	min-height: 127px;
 	flex-wrap: wrap;
 	align-items: center;
-	align-content: baseline;
+	align-content: space-between;
 	margin-bottom: 40px;
 }
 
@@ -1571,8 +1572,8 @@ a:active {
 	height: 36px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
-	padding-left: 10px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 35px;
 	color: #ffffff;
 	font:inherit;
 	font-size: 16px;
@@ -1582,29 +1583,41 @@ a:active {
 	-webkit-appearance: none;
   	-moz-appearance: none;
   	appearance: none;
+  }
 
 .filter-type label {
 	position: absolute;
-	top: -25px;
+	top: -22px;
 	left: 15px;
 }
 
 
 
 .filter-price {
-	display: flex;
-	flex-direction: column;
-	min-width: 200px;
-	margin-right: 15px;
-}
-
-.filter-price input {
+	margin:0;
+	padding: 0;
+	position: relative;
 	display: block;
-	width: 190px;
+	min-width: 217px;
+	margin-right: 15px;
 	height: 36px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
 	border:none;
+}
+
+.filter-price label {
+	position: absolute;
+	top: -22px;
+	left: 14px;
+}
+
+.filter-price input[type="range"] {
+	margin-top: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 177px;
+
 
 }
 
@@ -1616,7 +1629,7 @@ a:active {
 	height: 36px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
-	padding-right: 15px;
+	padding-right: 12px;
 	padding-left: 5px;
 	border:none;
 	padding-top: 7px;
@@ -1624,8 +1637,8 @@ a:active {
 
 .filter-fatness legend {
 	position: absolute;
-	top: -25px;
-	left: 15px;
+	top: -22px;
+	left: 14px;
 }
 
 .filter-fatness label {
@@ -1750,7 +1763,7 @@ a:active {
 	background-color: #9cb0a4;
 	border: solid 2px #fbfcfb;
 	color: #ffffff;
-	padding: 7px 25px;
+	padding: 7px 27px;
 	padding-top: 8px;
 	border-radius: 20px;
 	margin-left: 15px;
