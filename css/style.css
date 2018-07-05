@@ -801,9 +801,7 @@ a:active {
 	padding-top: 6px;
 	padding-left: 14px;
 	padding-right: 14px;
-	/*margin-right: 26px;	*/
 	text-align: center;
-	border-radius: 7px;
 }
 
 /*.catalog-list-ltem:hover {
@@ -874,9 +872,6 @@ a:active {
 	font-weight: 700;
 }
 
-/*Вот сейчас подчеркивается абзац на всю ширину, изменится ли подчеркивание когда я задам display: inline-block или block?
-или нужно использовать другой метод?*/
-
 .item-name {   
 	font-weight: 500;
 	border-bottom: solid 1px #abc2b5; 
@@ -897,23 +892,44 @@ a:active {
 .catalog-list .item-button {
 	display: none;
 	position: absolute;
-	bottom: 20px;
+	top: 340px;
 	left: 46px;
 	padding-left: 17px;
 	padding-right: 17px;
 	border-radius: 20px;
 	padding-top: 9px;
 	padding-bottom: 12px;
+	z-index: 10;
 }
+
+.catalog-list-item:hover::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 293px;
+	height: 37px;
+	margin-bottom: -37px;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
 
 .catalog-list-item:hover {
 	background-color: rgba(255, 255, 255, 0.2);
-	min-height: 405px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	/*min-height: 405px;*/
 }
 
 .catalog-list-item:hover .item-button {
 	display: block;
 }
+
+
+
 
 
 
