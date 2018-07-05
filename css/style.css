@@ -1760,6 +1760,7 @@ a:active {
 
 .filter-form-button {
 	font:inherit;
+	box-sizing: border-box;
 	line-height: 18px;
 	font-weight: 500;
 	background-color: #9cb0a4;
@@ -1778,18 +1779,28 @@ a:active {
 
 .filter-form-button:active {
   background-color: rgb(237, 237, 237);
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+  	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105);
+  	border:none;
+ 	padding: 9px 29px;
+	padding-top: 10px;
 }
 
-}
+
 
 /*сетка пагинатора*/
 
 .pagination {
 	display: flex;
-	width: 190px;
-	justify-content: space-around;
-	margin-left: auto;
+	min-width: 190px;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+
+	margin-top: 49px;
+	margin-right: 20px;
+}
+
+.pagination li {
+	margin-left: 20px;
 
 }
 /*Навигация в каталоге*/
@@ -1798,6 +1809,7 @@ a:active {
 	font-weight: 500;
 	line-height: 18px;
 	border-bottom: none;
+	display: block;
 }
 
 .pagination a:hover {
