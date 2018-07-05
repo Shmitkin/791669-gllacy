@@ -1794,32 +1794,77 @@ a:active {
 	min-width: 190px;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-
-	margin-top: 49px;
+	margin-top: 48px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-.pagination li {
-	margin-left: 20px;
 
-}
 /*Навигация в каталоге*/
 
 .pagination a {
 	font-weight: 500;
-	line-height: 18px;
+	line-height: 28px;
 	border-bottom: none;
 	display: block;
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	vertical-align: text-bottom;
+	text-align: center;
+	background-color: transparent;
+	position: relative;
+	margin-left: 3px;
+}
+
+.pagination .current,
+.pagination a:active {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .pagination a:hover {
-	background-color: #9db1a5;
+	background-color: rgba(255,255,255, 0.2);
 	color: #ffffff;
 }
 
 .pagination a:active {
 	background-color: #ffffff;
 	color: #323232;
+}
+
+.pagination li:first-child svg {
+	position: absolute;
+	width: 9px;
+	height: 13px;
+	top: 7px;
+	left: 6px;
+	transform: rotate(180deg);
+}
+
+.disabled path {
+	fill: rgba(255, 255, 255, 0.2);
+}
+
+.pagination li:first-child path {
+	background-color: rgba(255,255,255, 0);
+}
+
+.pagination li:first-child a:hover {
+background-color: rgba(255,255,255, 0);
+}
+
+
+.pagination li:last-child svg {
+	position: absolute;
+	width: 9px;
+	height: 13px;
+	top: 7px;
+	left: 11px;
+}
+
+.pagination li:last-child a:hover path {
+	fill: #000000;
 }
 
 
