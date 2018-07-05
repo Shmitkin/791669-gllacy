@@ -875,6 +875,7 @@ a:active {
 	padding-left: 14px;
 	padding-right: 14px;
 	text-align: center;
+	margin-bottom: -6px;
 }
 
 /*.catalog-list-ltem:hover {
@@ -887,7 +888,7 @@ a:active {
 
 .catalog-list-item img {
 	border-radius: 133px;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 }
 
 .catalog-list-item p {
@@ -1036,6 +1037,7 @@ a:active {
 	padding-left: 20px;
 	padding-right: 22px;
 	border-radius: 15px;
+	margin-top: 6px;
 	
 }
 
@@ -1550,7 +1552,7 @@ a:active {
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: space-between;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 .filter-form input,
