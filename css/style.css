@@ -242,6 +242,12 @@ a:active {
 	border-bottom: none;
 }
 
+.site-menu .current {
+	background-color: #d07058;
+	color: #ffffff;
+	border-bottom: none;
+}
+
 
 
 
@@ -467,13 +473,15 @@ a:active {
 
 .user-search-form input:hover,
 .user-login-form input:hover {
-	border: 2px solid #c7c6c5;
+	border: 1px solid #c7c6c5;
+	box-shadow: inset #c7c6c5 0 0 0 1px;
 
 }
 
 .user-search-form input:focus,
 .user-login-form input:focus {
-	border: 2px solid #8fbdec;
+	border: 1px solid #8fbdec;
+	box-shadow: inset #8fbdec 0 0 0 1px;
 
 }
 
@@ -530,6 +538,116 @@ a:active {
 	background-position: 0 0;	
 }
 
+
+.user-basket-container {
+	background-color: #f8f7f4;
+	z-index: 10;
+	top: 35px;
+	left: -423px;
+	position: absolute;
+	width: 540px;
+	min-height: 242px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 7px;	
+	display: none;
+}
+
+.user-basket-list {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding: 15px;
+}
+
+.user-basket-list p,
+.user-basket-list span {
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.user-basket-list-item {
+	display: flex;
+	justify-content: flex-start;
+	min-height: 44px;
+	align-items: baseline;
+	margin-bottom: 10px;
+}
+
+.basket-delete-button {
+	display: block;
+	width: 16px;
+	height: 16px;
+    margin-left: 4px;
+	margin-right: 5px;
+	align-self: center;
+	cursor: pointer;
+}
+
+.minified-item-image {
+	width: 36px;
+	height: 36px;
+	margin-right: 12px;
+	align-self: center;
+}
+
+.basket-item-name {
+	display: block;
+	width: 222px;
+	margin-right: 25px;
+}
+
+.basket-price span {
+	margin-left: 4px;
+}
+
+.basket-price {	
+	margin-right: 28px;
+}
+
+.user-basket-list li:last-child {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #cacac7;
+}
+
+.total-price {
+	position: absolute;
+	top: 130px;
+	right: 15px;
+	color: #323232;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.user-basket-container .button {
+	position: absolute;
+	top: 177px;
+	right: 14px;
+	padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 20px;
+    padding-top: 9px;
+    padding-bottom: 12px;
+}
+
+.user-basket-container::before {
+	content: "";
+	display: block;
+	background-color: transparent;
+	height: 10px;
+	width: 120px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+.user-menu li:last-child:hover .user-basket-container {
+	display: block;
+}
 
 
 .user-menu input {
@@ -623,7 +741,6 @@ a:active {
 	border-radius: 20px;
 	padding-top: 10px;
 	padding-bottom: 8px;
-
 }
 
 .user-menu li:nth-child(2):hover .user-login-form {
@@ -1233,7 +1350,22 @@ a:active {
 	flex-grow: 1;
 	padding-left: 15px;
 	padding-right: 10px;
+	outline: none;
 }
+
+.subscribe-form input:hover {
+	border: 1px solid #c7c6c5;
+	box-shadow: inset #c7c6c5 0 0 0 1px;
+}
+
+.subscribe-form .input:focus {
+	border: 1px solid #8fbdec;
+	box-shadow: inset #8fbdec 0 0 0 1px;
+}
+
+
+
+
 
 /*Сетка карты*/
 .map .container {
