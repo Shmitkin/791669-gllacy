@@ -1063,6 +1063,8 @@ a:active {
 
 
 .item-price {
+	position: relative;
+	z-index: 15;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
@@ -1124,6 +1126,11 @@ a:active {
 
 .catalog-list-item:hover .item-button {
 	display: block;
+}
+
+.catalog-list-item:hover img {
+	position: relative;
+	z-index:10;
 }
 
 
