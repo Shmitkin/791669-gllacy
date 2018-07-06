@@ -231,7 +231,7 @@
 		  				<b>8 812 450-25-25</b><br>
 		  				(с 10 до 20 ежедневно)	  				
 		  			</p>
-		  			<a class="button .feedback-button" href="#">Форма обратной связи</a>
+		  			<a class="button feedback-button" href="#">Форма обратной связи</a>
 		  		</div>
 	  		</div>
 	  	</section>
@@ -309,24 +309,9 @@
   	</form>
   	<button class="button-popup-close" type="button">Закрыть</button>
   	</div>
+  	<div class="popup-bg"></div>
 	</div>
-<script>
-	var link = document.querySelector(".copyright-link");
-
-	var popup = document.querySelector(".feedback-popup");
-	 var close = popup.querySelector(".button-popup-close");
-
-	link.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		popup.classList.add("popup-show");
-
-  });
-
-	close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("popup-show");
-  });
-</script>
+	<script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
 		
