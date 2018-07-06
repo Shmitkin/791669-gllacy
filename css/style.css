@@ -1734,6 +1734,24 @@ a:active {
 	left: 15px;
 }
 
+.filter-type-arrow {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	right: 15px;
+	top: 14px;
+	background-image: url(../img/decoration/icon-down-dir-white.svg);
+	background-repeat: no-repeat;
+}
+
+.filter-type:hover select {
+	color: #000000;
+}
+
+.filter-type:hover .filter-type-arrow {
+	background-image: url(../img/decoration/icon-down-dir.svg);
+	
+}
 
 
 .filter-price {
@@ -1878,7 +1896,6 @@ a:active {
 
 
 .filter-form select,
-/*на инпут тайп рэнж фон не работает, предполагаю что заработает в будущем*/
 .filter-form input[type="range"], 
 .filter-form fieldset {
 	font:inherit;
