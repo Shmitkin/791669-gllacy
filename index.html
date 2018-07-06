@@ -231,7 +231,7 @@
 		  				<b>8 812 450-25-25</b><br>
 		  				(с 10 до 20 ежедневно)	  				
 		  			</p>
-		  			<a href="#" class="button">Форма обратной связи</a>
+		  			<a class="button .feedback-button" href="#">Форма обратной связи</a>
 		  		</div>
 	  		</div>
 	  	</section>
@@ -300,7 +300,7 @@
   		</p>
   		<p class="feedback-form-item">
   			<label for="feedback-form-email" class="visually-hidden">Ваша почта для ответа</label>
-  			<input type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
+  			<input type="email" name="feedback-email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
   		</p>
   		<p class="feedback-form-item">
   			<textarea placeholder="Напишите что-нибудь..."></textarea>
@@ -310,6 +310,23 @@
   	<button class="button-popup-close" type="button">Закрыть</button>
   	</div>
 	</div>
+<script>
+	var link = document.querySelector(".copyright-link");
+
+	var popup = document.querySelector(".feedback-popup");
+	 var close = popup.querySelector(".button-popup-close");
+
+	link.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		popup.classList.add("popup-show");
+
+  });
+
+	close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("popup-show");
+  });
+</script>
   </body>
 </html>
 		

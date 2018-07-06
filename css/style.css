@@ -1058,6 +1058,7 @@ a:active {
 	background-image: url(../img/decoration/hit.svg); 
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	z-index: 50;
 }
 /*Блок хитов продаж и каталога*/
 
@@ -1572,6 +1573,7 @@ a:active {
 	padding-left: 25px;
 	padding-right: 20px;
 	padding-bottom: 20px;
+	z-index: 60;
 }
 
 .feedback-popup p {
@@ -1657,7 +1659,7 @@ a:active {
   transform: rotate(-45deg);
 }
 
-.feedback-form input[type="text"],
+/*.feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
 	font: inherit;
@@ -1674,7 +1676,7 @@ a:active {
 .feedback-form input[type="email"]:focus,
 .feedback-form textarea:focus {
 	border: 2px solid #8fbdec;
-}
+}*/
 
 /*Страница каталог*/
 /*Форма фильтра*/
@@ -2118,11 +2120,60 @@ background-color: rgba(255,255,255, 0);
 	height: 1px;
 	padding-top: 8px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	margin-bottom: 5px;
-	
-	
+	margin-bottom: 5px;	
 }
 
+
+/*JAVA*/
+
+.popup-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 
 
