@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="catalog-page-wrapper">
@@ -37,7 +37,7 @@
                     </svg>
                     <span class="visually-hidden">Поиск</span>
                   </a>
-                  <form class="user-search-form" method="post">
+                  <form class="user-search-form" method="post" action="https://echo.htmlacademy.ru">
                     <label for="user-search" class="visually-hidden">Что ищем?</label>
                     <input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
                   </form>
@@ -52,7 +52,7 @@
                     </svg>
                     Вход
                   </a>
-                  <form class="user-login-form" method="post">
+                  <form class="user-login-form" method="post" action="https://echo.htmlacademy.ru">
                     <p class="user-login-form-item">
                       <label class="visually-hidden" for="user-login-form-email">Электронная почта для входа</label>
                       <input type="email" name="email" id="user-login-form-email" placeholder="Электронная почта" required>
@@ -125,7 +125,7 @@
         <section class="catalog">
           <div class="container">
             <h1>Сливочное мороженое</h1>
-            <form class="filter-form" method="get">
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
               <div class="filter-form-item filter-type">
                 <label for="filter-form-type">Сортировка:</label>
                 <span class="filter-type-arrow">

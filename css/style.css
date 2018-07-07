@@ -1363,7 +1363,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #000000;
   background-color: #ffffff;
   min-height: 44px;
   border: 1px solid #d3d3d2;
@@ -1477,7 +1477,7 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  max-width: 400px;
+  width: 400px;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
