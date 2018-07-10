@@ -576,7 +576,7 @@ a {
   display: block;
   width: 16px;
   height: 16px;
-  margin-left: 4px;
+  margin-left: 7px;
   margin-right: 5px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -616,6 +616,14 @@ a {
   border-bottom: 1px solid #cacac7;
 }
 
+.user-basket-list-item:last-child .minified-item-image {
+  margin-top: -10px;
+}
+
+.user-basket-list-item:last-child .basket-delete-button {
+  margin-top: -13px;
+}
+
 .total-price {
   position: absolute;
   top: 130px;
@@ -630,7 +638,7 @@ a {
   position: absolute;
   top: 177px;
   right: 14px;
-  padding-left: 17px;
+  padding-left: 13px;
   padding-right: 17px;
   border-radius: 20px;
   padding-top: 9px;
