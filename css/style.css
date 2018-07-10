@@ -810,6 +810,7 @@ a {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
+  display: block;
 }
 
 .slider {
@@ -886,7 +887,8 @@ a {
   font-weight: 700;
   margin: 0 auto;
   width: 680px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
+  margin-top: 5px;
 }
 
 .slider .button {
@@ -1435,6 +1437,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  display: block;
 }
 
 .map-info .button {
@@ -1706,8 +1709,8 @@ a {
 
 .catalog h1 {
   margin: 0;
-  margin-top: -14px;
-  margin-bottom: 52px;
+  margin-top: -10px;
+  margin-bottom: 50px;
 }
 
 .filter-form-item p {
@@ -1967,8 +1970,8 @@ a {
 
 .filter-form-filling legend {
   position: absolute;
-  top: -25px;
-  left: 15px;
+  top: -22px;
+  left: 14px;
 }
 
 .filter-form-filling label {
