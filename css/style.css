@@ -2183,8 +2183,7 @@ a {
 .interactive-map iframe {
   width: 100%;
   height: 431px;
-  frameborder: 0;
-  allowfullscreen: true;
+  border: 0;
 }
 
 .popup-show {
