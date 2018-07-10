@@ -305,7 +305,7 @@ a {
   left: 5px;
 }
 
-.site-menu li:first-child:hover .site-submenu {
+.site-menu-list-item:first-child:hover .site-submenu {
   display: block;
 }
 
@@ -317,7 +317,7 @@ a {
   background-color: #f8f7f4;
 }
 
-.site-submenu li:first-child a {
+.site-submenu-list-item:first-child a {
   padding-top: 15px;
   padding-bottom: 12px;
   margin-bottom: 1px;
@@ -326,13 +326,13 @@ a {
   font-weight: 700;
 }
 
-.site-submenu li:last-child a {
+.site-submenu-list-item:last-child a {
   padding-bottom: 15px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-.site-submenu li:first-child::after {
+.site-submenu-list-item:first-child::after {
   content: "";
   display: block;
   height: 1px;
@@ -467,7 +467,7 @@ a {
   padding-right: 5px;
 }
 
-.user-menu li:first-child:hover .user-search-form {
+.user-menu-list-item:first-child:hover .user-search-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,7 +656,7 @@ a {
   right: 0;
 }
 
-.user-menu li:last-child:hover .user-basket-container {
+.user-menu-list-item:last-child:hover .user-basket-container {
   display: block;
 }
 
@@ -762,7 +762,7 @@ a {
   padding-bottom: 8px;
 }
 
-.user-menu li:nth-child(2):hover .user-login-form {
+.user-menu-list-item:nth-child(2):hover .user-login-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,15 +795,19 @@ a {
   margin-right: 20px;
 }
 
-.breadcrumps-list li:last-child a {
+.breadcrumps-list-item:last-child a {
   border-bottom: none;
 }
 
-.breadcrumps-list li:not(:last-child) a::after {
+.breadcrumps-list-item {
+  position: relative;
+}
+
+.breadcrumps-list-item:not(:last-child)::after {
   content: "»";
   position: absolute;
-  top: 0;
-  right: -15px;
+  top: -3px;
+  right: 5px;
 }
 
 .main-header-contacts {
@@ -2112,7 +2116,7 @@ a {
   color: #323232;
 }
 
-.pagination li:first-child svg {
+.pagination-list-item:first-child svg {
   position: absolute;
   width: 9px;
   height: 13px;
@@ -2126,15 +2130,15 @@ a {
   fill: rgba(255, 255, 255, 0.2);
 }
 
-.pagination li:first-child path {
+.pagination-list-item:first-child path {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.pagination li:first-child a:hover {
+.pagination-list-item:first-child a:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.pagination li:last-child svg {
+.pagination-list-item:last-child svg {
   position: absolute;
   width: 9px;
   height: 13px;
@@ -2142,7 +2146,7 @@ a {
   left: 11px;
 }
 
-.pagination li:last-child a:hover path {
+.active:active path {
   fill: #000000;
 }
 
